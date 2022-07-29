@@ -91,7 +91,7 @@ body {
   line-height: 13px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  
 }
 .grid-items__item p{
   display: flex;
@@ -100,10 +100,11 @@ body {
   width: 19px;
   height: 19px;
 }
-input[type=checkbox]:checked + label {
+input[type=checkbox]:checked + label{
   text-decoration: line-through;
   color: #9B96AC;
 }
+
 .grid-items__item-add p::before {
   margin-left: 5px;
   content: '(';
