@@ -49,6 +49,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .header__button-in, .header__button-up {
   width: 110px;
   height: 46px;
