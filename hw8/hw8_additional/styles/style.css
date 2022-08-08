@@ -122,11 +122,14 @@ ul li:first-child {
   height: 147px;
   background: #666699;
 }
-.weather__city {
-  opacity: 0.7; 
+.weather__items {
   cursor: url('../cursor.svg') 24 35,pointer;	
 }
-.weather__city:hover {
+.weather__items:hover .weather__city {
+  opacity: 0.7;
+}
+
+.weather__items:hover .weather__city:hover {
   opacity: 1;
 }
 .weather__wishes {
