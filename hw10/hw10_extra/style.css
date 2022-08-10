@@ -86,9 +86,20 @@ color: #828282;
   line-height: 20px;
   color: #828282;
   transform: rotate(-90deg);
+  padding-top: 33px;
+  display: inline-flex;
+}
+.name__lang a {
   text-decoration: none;
-  padding-top: 48px;
-  }
+  padding: 5px;
+  color: #828282;
+}
+.name__lang a:hover {
+  color: black;
+}
+.name__lang p {
+  padding-top: 4px;
+}
 .photo {
   margin-top: 49px;
   background: url('img/photox940.jpg');
