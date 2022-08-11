@@ -67,9 +67,12 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.menu a{
+.menu a {
   width: auto;
   padding: 0;
+}
+.menu li:hover {
+  background-color: #BDBDBD;
 }
 .logo {
   width: 327px;
