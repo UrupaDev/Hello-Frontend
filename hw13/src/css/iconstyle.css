@@ -26,33 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook .path1:before {
-  content: "\e900";
-  color: #CCCCCC;
-}
-.icon-facebook .path2:before {
+
+.icon-facebook:before {
   content: "\e901";
-  color: #CCCCCC;
 }
-.icon-google .path1:before {
-  content: "\e902";
-  color: rgb(255, 255, 255);
-}
-.icon-google .path2:before {
+.icon-google:before {
   content: "\e903";
-  margin-left: -1em;
-  color: rgb(204, 204, 204);
 }
-.icon-linkedin .path1:before {
-  content: "\e904";
-  color: rgb(255, 255, 255);
-}
-.icon-linkedin .path2:before {
+.icon-linkedin:before {
   content: "\e905";
 }
-.icon-twitter .path1:before {
-  content: "\e906";
-}
-.icon-twitter .path2:before {
+.icon-twitter:before {
   content: "\e907";
 }

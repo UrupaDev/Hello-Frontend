@@ -65,9 +65,10 @@ body {
   display: inline-flex;
 }
 .section-slider__left img {
-  margin: 15px;
+  padding: 15px;
   z-index: 1;
 }
+
 .section-slider__wrapper {
   padding-left: 56px;
 }
@@ -94,6 +95,7 @@ body {
 
 .section-slider__right {
   padding-left: 80px;
+  width: 515px;
 }
 .section-slider__right h2 {
   text-align: center;
@@ -106,7 +108,7 @@ body {
   text-transform: capitalize;
   color: #666666;
 }
-.section-slider__right div {
+.section-slider__right .line {
   height: 61px;
   display: flex;
   align-items: center;
@@ -122,6 +124,22 @@ body {
   text-transform: capitalize;
   color: #666666;
 }
+.section-slider__right .social__networks {
+  text-align: center;
+  padding: 30px 0 49px 0;
+}
+.section-slider__right .social__networks a {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+}
+.section-slider__right .social__networks a .icon {
+  color: #CCCCCC;
+  font-size: 30px;
+}
 .section-slider__right p {
   display: inline;
   font-family: "Raleway";
@@ -131,6 +149,10 @@ body {
   line-height: 24px;
   text-align: center;
   color: #333333;
+}
+.section-slider__right .section-slider__decor2 {
+  text-align: center;
+  padding-top: 4px;
 }
 .section-slider__right a {
   text-decoration: none;
@@ -157,10 +179,4 @@ body {
 .section-slider__right button:hover {
   background-color: #FFCC00;
   border: 1px solid #333333;
-}
-
-.icons {
-  width: 30px;
-  height: 30px;
-  color: #333333;
 }
