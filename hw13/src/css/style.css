@@ -140,6 +140,9 @@ body {
   color: #CCCCCC;
   font-size: 30px;
 }
+.section-slider__right .social__networks a .icon:hover {
+  color: #FFCC00;
+}
 .section-slider__right p {
   display: inline;
   font-family: "Raleway";

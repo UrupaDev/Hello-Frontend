@@ -120,6 +120,7 @@ body {
    .social__networks {
     text-align: center;
     padding: 30px 0 49px 0;
+
    }
    .social__networks a {
     width: 30px;
@@ -132,6 +133,10 @@ body {
     .icon {
       color: #CCCCCC;
       font-size: 30px;
+    }
+
+    .icon:hover {
+      color: #FFCC00;
     }
    }
    p {
