@@ -195,8 +195,140 @@
   justify-content: space-between;
 }
 .posts__conteiner .posts__wrapper .posts__items .posts__item {
-  max-width: 370px;
+  display: flex;
   width: 100%;
+  max-width: 370px;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts__item .posts__subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts__item h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  padding-top: 25px;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts__item .posts__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+  padding-top: 20px;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts__item .posts__card {
+  max-width: 370px;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts__item .posts-popular__card {
+  max-width: 570px;
+}
+.posts__conteiner .posts__wrapper .posts__items .posts-popular__item {
+  max-width: 570px;
+}
+.posts__conteiner .posts-popular__button {
+  margin-top: 54px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.posts__conteiner .posts-popular__button button {
+  width: 180px;
+  height: 46px;
+  background: #565656;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.posts__conteiner .posts-popular__button button:active {
+  background: #7B7B7B;
+}
+
+/* footer */
+.footer__conteiner {
+  margin-top: 30px;
+  background: #F4F4F4;
+}
+.footer__conteiner .footer__wrapper {
+  display: flex;
+  padding-top: 70px;
+}
+.footer__conteiner .footer__wrapper .footer__left-content {
+  padding-left: 135px;
+}
+.footer__conteiner .footer__wrapper .footer__left-content h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.footer__conteiner .footer__wrapper .footer__left-content .footer__contacts {
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
+.footer__conteiner .footer__wrapper .footer__left-content .footer__contacts a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-decoration: none;
+}
+.footer__conteiner .footer__wrapper .footer__right-content {
+  margin-left: 530px;
+  display: flex;
+  padding-top: 55px;
+}
+.footer__conteiner .footer__wrapper .footer__right-content .footer__social-media {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  padding-top: 4px;
+  margin-right: 15px;
+}
+.footer__conteiner .footer__wrapper .footer__right-content .footer__social-media:hover {
+  background: #565656;
+  color: #FFFFFF;
+}
+.footer__conteiner .footer__license {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.footer__conteiner .footer__license p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
 }
 
 .conteiner {
@@ -232,6 +364,9 @@
 }
 .conteiner .header__conteiner .header__wrapper .header__menu .menu__item a {
   color: #000000;
+}
+.conteiner .header__conteiner .header__wrapper .header__menu .menu__item a:hover {
+  color: rgb(237, 184, 86);
 }
 
 .header__search-button {
