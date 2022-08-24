@@ -45,8 +45,6 @@
   text-decoration: none;
 }
 
-/* header menu */
-
 .conteiner {
 
   /* home page */
@@ -374,8 +372,11 @@
   }
 }
 
-
-
-
-
 @import "_header" ;
+
+@media screen and (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+  
