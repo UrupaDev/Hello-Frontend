@@ -1,3 +1,7 @@
+@use "icon_style.css";
+@use "reset.css";
+@use "_header.scss";
+
 /* fonts */
 
 @font-face {
@@ -372,7 +376,6 @@
   }
 }
 
-@import "_header" ;
 
 @media screen and (max-width: 768px) {
   body.lock {
