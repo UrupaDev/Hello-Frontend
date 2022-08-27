@@ -387,12 +387,16 @@ textarea {
 body {
   font-family: "Delius Unicase", cursive;
   font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
 }
 
 .main-wrapper {
-  max-width: 1170px;
+  max-width: 1185px;
   width: 100%;
   margin: auto;
+  padding: 0 15px;
 }
 .main-wrapper .section h2 {
   font-family: "Delius Unicase";
@@ -407,8 +411,8 @@ body {
 }
 .main-wrapper .section .grid__items {
   display: grid;
-  grid-template-columns: 370px 370px 370px;
-  grid-template-rows: repeat(3, 370px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 30px;
   grid-template-areas: "img1_1 img1_2 img1_2" "img1_3 img1_3 img1_4" "img1_5 img1_6 img1_6";
 }
@@ -435,6 +439,12 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+.main-wrapper .section .grid__items .grid__item:hover .top-part .icon {
+  opacity: 0.5;
+}
+.main-wrapper .section .grid__items .grid__item:hover .top-part .icon:hover {
+  opacity: 1;
+}
 .main-wrapper .section .grid__items .grid__item .top-part {
   position: absolute;
   top: 0;
@@ -453,10 +463,7 @@ body {
   text-align: center;
   font-size: 42px;
   color: #4F4F4F;
-  opacity: 0.5;
-}
-.main-wrapper .section .grid__items .grid__item .icon:hover {
-  opacity: 1;
+  opacity: 0;
 }
 .main-wrapper .section .grid__items .bottom-part {
   position: absolute;
@@ -485,7 +492,7 @@ body {
   color: #E0E0E0;
 }
 .main-wrapper .section2 .grid__items {
-  grid-template-rows: repeat(4, 370px);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "img2_1 img2_2 img2_2" "img2_3 img2_3 img2_4" "img2_3 img2_3 img2_4" "img2_5 img2_5 img2_6";
 }
 .main-wrapper .section2 .grid__items .img2_1 {
@@ -507,7 +514,7 @@ body {
   grid-area: img2_6;
 }
 .main-wrapper .section3 .grid__items {
-  grid-template-rows: repeat(5, 370px);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "img3_1 img3_2 img3_3" "img3_4 img3_2 img3_5" "img3_6 img3_7 img3_5" "img3_6 img3_8 img3_8" "img3_9 img3_9 img3_10";
 }
 .main-wrapper .section3 .grid__items .img3_1 {
@@ -554,8 +561,21 @@ body {
 }
 .main-wrapper .grid__item:hover::after {
   background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
-  border-radius: 20px;
-  background-size: 100% 100%;
-  background-position: 100% 100%;
   transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+  }
+  .main-wrapper .section .grid__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-wrapper .grid__item img {
+    width: 100%;
+  }
 }
