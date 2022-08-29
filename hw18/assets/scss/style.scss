@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Delius Unicase', cursive;
   font-family: 'Roboto', sans-serif;  
@@ -206,8 +207,8 @@ body {
        background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
      }
      .grid__item:hover::after {
-      background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
-      transform: rotate(90deg);
+      background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+     
      }
    } 
     @media screen and (max-width: 768px) {
@@ -225,3 +226,4 @@ body {
         width: 100%;
        }
      }
+
