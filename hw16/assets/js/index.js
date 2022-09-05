@@ -1,4 +1,4 @@
-let burger = document.getElementsByClassName('header__burger-menu')[0];
+let lable = document.getElementsByClassName('header__burger-menu')[0];
 let header = document.getElementsByClassName('header')[0];
 let body = document.getElementsByClassName('body')[0];
 let menu = document.getElementsByClassName('header__menu')[0];
