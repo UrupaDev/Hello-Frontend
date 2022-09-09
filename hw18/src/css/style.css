@@ -386,6 +386,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: auto;
+  transition: 0.9s;
 }
 
 .main-wrapper {
@@ -434,12 +435,14 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  transition: 0.9s;
 }
 .main-wrapper .section .grid__items .grid__item:hover .top-part .icon {
   opacity: 0.5;
 }
 .main-wrapper .section .grid__items .grid__item:hover .top-part .icon:hover {
   opacity: 1;
+  transition: 0.9s;
 }
 .main-wrapper .section .grid__items .grid__item .top-part {
   position: absolute;
@@ -553,6 +556,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  transition: background 0.5s linear;
   background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
 }
 .main-wrapper .grid__item:hover::after {
