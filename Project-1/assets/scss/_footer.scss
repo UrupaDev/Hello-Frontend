@@ -1,0 +1,61 @@
+.footer__item1 {
+
+  p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.6;
+  }
+}
+
+.footer__item2 {
+  display: flex;
+  justify-content: center;
+
+  .item2-made {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.6;
+  }
+
+  .item2-dev {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #262A3F;
+    padding-left: 12px;
+  }
+}
+
+.footer__item3 {
+  display: flex;
+  justify-content: flex-end;
+
+  .item3-list {
+    display: flex;
+
+    li {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+      padding-left: 32px;
+
+      a {
+        color: #262A3F;
+      }
+    }
+  }
+}

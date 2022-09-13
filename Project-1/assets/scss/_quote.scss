@@ -1,0 +1,29 @@
+.quote__content {
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 100px 300px 100px 160px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 101px;
+    top: 112px;
+  }
+
+  .quote__article {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+  }
+
+  p {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    padding-top: 40px;
+  }
+}

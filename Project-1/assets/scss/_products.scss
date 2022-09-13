@@ -1,0 +1,61 @@
+.products__video {
+  border-radius: 8px;
+  position: relative;
+  margin: 31px 0;
+
+  video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+}
+
+.player-button {
+  position: absolute;
+  z-index: 1;
+}
+
+.player-decor-button1 {
+  width: 35px;
+  height: 35px;
+  margin: 0 14px 0 21px;
+}
+
+.player-decor-button2 {
+  width: 13px;
+  height: 13px;
+  margin: 0 8px;
+}
+
+.products__content {
+  padding-top: 50px;
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+    padding-bottom: 20px;
+
+    span {
+      color: #85BBB1;
+      font-style: italic;
+    }
+  }
+
+  p {
+    max-width: 897px;
+    width: 100%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+  }
+}

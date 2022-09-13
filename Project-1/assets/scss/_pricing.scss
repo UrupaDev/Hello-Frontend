@@ -1,0 +1,93 @@
+.pricing__title {
+  max-width: 400px;
+  width: 100%;
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+    padding-bottom: 20px;
+
+    span {
+      color: #85BBB1;
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+  }
+}
+
+.pricing__cards {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  border-bottom: 1px solid #E4E4E4;
+
+  .pricing__card {
+    height: 340px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1); 
+      transition: all 0.3s ease-in-out;
+      -webkit-box-shadow: 3px 2px 15px 5px rgba(0,0,0,0.5); 
+      box-shadow: 3px 2px 15px 5px rgba(0,0,0,0.5);
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: url(../../src/img/overlay.webp);
+    }
+
+    p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+      z-index: 2;
+      opacity: 0.8;
+    }
+
+    span {
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+      z-index: 2;
+    }
+  }
+}

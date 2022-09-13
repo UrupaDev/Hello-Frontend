@@ -1,0 +1,120 @@
+.home__content {
+  max-width: 658px;
+  width: 100%;
+  padding: 260px 0 466px 135px;
+
+  h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: #262A3F;
+
+    span {
+      color: #85BBB1;
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.8;
+    padding-top: 20px;
+  }
+}
+
+.home__section-info-right {
+  width: 100%;
+  position: relative;
+}
+
+.home__section-info-left {
+  max-width: 770px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "grid1 grid4"
+    "grid2 grid5"
+    "grid3 grid6";
+  position: absolute;
+  right: 0;
+  background: #FFFFFF;
+  opacity: 0.9;
+  margin-top: 45px;
+  padding-top: 45px;
+
+  .home__item-type1 {
+
+    h4 {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 68px;
+      line-height: 72px;
+      text-align: center;
+      color: #262A3F;
+    }
+
+    p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #262A3F;
+    }
+
+    .home__deco-line {
+      max-width: 100px;
+      width: 100%;
+      height: 1px;
+      background: #85BBB1;
+      margin: 40px 0 0 135px;
+    }
+  }
+
+  .home__item-type2 {
+
+    p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #262A3F;
+    }
+  }
+
+  .info1 {
+    grid-area: grid1;
+  }
+
+  .info2 {
+    grid-area: grid2;
+  }
+
+  .info3 {
+    grid-area: grid3;
+  }
+
+  .info4 {
+    grid-area: grid4;
+  }
+
+  .info5 {
+    grid-area: grid5;
+
+    p {
+      padding-top: 25px;
+    }
+  }
+}

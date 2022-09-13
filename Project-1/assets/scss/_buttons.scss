@@ -1,0 +1,81 @@
+.button-type1 {
+  position: relative;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 1;
+
+  .home__button-box {
+    display: block;
+    color: #F1897B;
+
+    .general__button-shadow {
+      position: absolute;
+      background: #F1897B;
+      opacity: 0.3; 
+      height: 13px;
+    }
+
+    .button-shadow1 {
+      width: 112px;
+      left: 7px;
+      bottom: 4px;
+    }
+
+    .button-shadow2 {
+      width: 172px;
+      right: 204px;
+      bottom: 0;
+    }
+
+    .button-shadow3 {
+      width: 112px;
+      left: 89px;
+      bottom: 33px;
+    }
+
+    &:hover {
+      color: #E54F3A;
+    }
+
+    .general__button-shadow:hover .home__button-box {
+      background: #E54F3A;
+    }
+  }
+  
+  .box-button-type1 {
+    width: 127px;
+    height: 25px;
+  }
+}
+
+.home__button {
+  padding-top: 50px;
+}
+
+.box-button-type2 {
+  width: 182px;
+  height: 24px;
+}
+
+.box-button-type3 {
+  max-width: 300px;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #E4E4E4;
+  text-align: center;
+  padding-top: 33px;
+}
+
+.button-submit {
+  border: none;
+  background: none;
+  margin-top: 40px;
+  padding-left: 0;
+  width: 182px;
+  height: 24px;
+}
