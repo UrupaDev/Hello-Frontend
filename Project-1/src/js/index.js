@@ -34,3 +34,9 @@ $('.video').parent().click(function () {
     }
 });
 
+// light/dark mode
+$(".checkbox").click(function() {
+  $(".body").toggleClass(".dark_mode");
+});
+
+

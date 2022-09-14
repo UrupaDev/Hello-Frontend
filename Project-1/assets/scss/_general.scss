@@ -6,3 +6,11 @@
 *a {
   text-decoration: none;
 }
+
+body {
+  background: white;
+}
+
+body.dark_mode {
+  background: black;
+}

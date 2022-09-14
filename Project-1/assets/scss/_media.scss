@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .home__section-info-left, .light-dark-mode {
+    margin-right: 15px;
+
+    .home__item h4 {
+      font-size: 56px;
+    }
+  }
+
+  .quote__content {
+    padding-right: 160px;
+  }
+
+
+  .pricing__cards .pricing__card {
+    padding: 20px 20px;
+    
+    p {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .footer__item3 .item3-list {
+    flex-direction: column;
+  }
+}

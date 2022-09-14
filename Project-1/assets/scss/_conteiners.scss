@@ -41,23 +41,24 @@
 }
 
 .section-info__conteiner {
-  height: 353px;
+  height: 670px;
 }
 
 .section-info__conteiner, .about__conteiner, .quote__conteiner, .use-cases__conteiner, .pricing__conteiner, 
 .resources__conteiner, .footer__conteiner {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
+  padding: 0 15px;
 }
   
 .section-info__items {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 712px;
   display: flex;
   max-width: 1170px;
   width: 100%;
+  margin-top: -285px;
 }
 
 .about__items {
@@ -102,10 +103,10 @@
 }
 
 .products__conteiner {
-  max-width: 970px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
-  padding-top: 120px;
+  padding: 120px 15px 0 15px;
 
   .products__items {
     border: 1px solid #E4E4E4;
@@ -119,6 +120,5 @@
 
 .resources__conteiner {
   z-index: 2;
-  margin-top: 120px;
   display: flex;
 }

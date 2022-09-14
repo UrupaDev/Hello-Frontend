@@ -30,27 +30,27 @@
 
 .home__section-info-right {
   width: 100%;
-  position: relative;
 }
 
 .home__section-info-left {
-  max-width: 770px;
-  width: 100%;
   max-height: 580px;
   height: 100%;
+  max-width: 770px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 370px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
     "grid1 grid4"
     "grid2 grid5"
     "grid3 grid6";
   position: absolute;
-  right: 0;
   background: #FFFFFF;
   opacity: 0.9;
   margin-top: 45px;
   padding-top: 45px;
+  right: 0;
+
 
   .home__item {
 
