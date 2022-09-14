@@ -1,3 +1,24 @@
+.player-decor-button1 {
+  width: 13px;
+  height: 13px;
+  margin: 0 8px;
+}
+
+.playpause {
+  background-image:url(../../src/img/icon\ play.svg);
+  background-repeat:no-repeat;
+  width: 120px;
+  height: 120px;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}
+
 .products__video {
   border-radius: 8px;
   position: relative;
@@ -13,33 +34,22 @@
   }
 }
 
-.player-button {
-  position: absolute;
-  z-index: 1;
-}
-
-.player-decor-button1 {
+.player-decor-button2 {
   width: 35px;
   height: 35px;
   margin: 0 14px 0 21px;
 }
 
-.player-decor-button2 {
-  width: 13px;
-  height: 13px;
-  margin: 0 8px;
-}
-
 .products__content {
   padding-top: 50px;
+  color: #262A3F;
+  font-style: normal;
 
   h2 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-    color: #262A3F;
     padding-bottom: 20px;
 
     span {
@@ -52,10 +62,9 @@
     max-width: 897px;
     width: 100%;
     font-family: 'Lato';
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
-    color: #262A3F;
   }
 }
+

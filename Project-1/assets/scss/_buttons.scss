@@ -1,4 +1,4 @@
-.button-type1 {
+.button-general {
   position: relative;
   font-family: 'Lato';
   font-style: normal;
@@ -30,6 +30,7 @@
       width: 172px;
       right: 204px;
       bottom: 0;
+      left: 10px;
     }
 
     .button-shadow3 {
@@ -42,19 +43,19 @@
       color: #E54F3A;
     }
 
-    .general__button-shadow:hover .home__button-box {
-      background: #E54F3A;
+    &:hover .general__button-shadow {
+      background:#E54F3A
     }
-  }
-  
-  .box-button-type1 {
-    width: 127px;
-    height: 25px;
   }
 }
 
 .home__button {
   padding-top: 50px;
+
+  .home__button-box {
+    width: 127px;
+    height: 25px;
+  }
 }
 
 .box-button-type2 {
@@ -71,11 +72,32 @@
   padding-top: 33px;
 }
 
-.button-submit {
-  border: none;
+.submit {
+  display: inline-block;
+  position: relative;
   background: none;
-  margin-top: 40px;
-  padding-left: 0;
-  width: 182px;
-  height: 24px;
+  border: none;
+
+  .submit-text {
+    color: #F1897B;
+  }
+
+  .resources__submit-shadow {
+    width: 95%;
+    height: 13px;
+    background-color: rgba(241,137,123,0.3);
+    position: absolute;
+    left: 10px;
+    top: 11px;
+  }
+}
+
+.submit:hover .submit-text {
+  color: #E64F3A;
+  transition: all 0.1s ease-in-out;
+}
+
+.submit:hover .resources__submit-shadow {
+  background-color: rgba(229,79,58,0.3);
+  transition: all 0.1s ease-in-out;
 }

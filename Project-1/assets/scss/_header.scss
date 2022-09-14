@@ -7,27 +7,23 @@
   }
 }
 
-.header__menu {
-
-  .header__menu-items {
-    display: flex;
-    justify-content: space-between;
+.header__menu-items {
+  display: flex;
+  justify-content: space-between;
+  
+  .header__menu-item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
     
-    .header__menu-item {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.08em;
-      
+    a {
+      color: #262A3F;
 
-      a {
-        color: #262A3F;
-
-        &:hover {
-          color: #85BBB1;
-        }
+      &:hover {
+        color: #85BBB1;
       }
     }
   }

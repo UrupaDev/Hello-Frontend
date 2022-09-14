@@ -1,6 +1,3 @@
-@import "_general", "_conteiners", "_header", "_home", "_buttons", "_about", "_quote", "_products", "_use-cases",
-"_pricing", "_resurces", "_footer";
-
 @font-face {
   font-family: "Lato";
   src: url(../../src/fonts/Lato-Light.woff2);
@@ -24,3 +21,6 @@
   src: url(../../src/fonts/PlayfairDisplay-Regular.woff2);
   font-weight: 400;
 }
+
+@import "_general", "_conteiners", "_header", "_home", "_buttons", "_about", "_quote", "_products", "_use-cases",
+"_pricing", "_resurces", "_footer";
