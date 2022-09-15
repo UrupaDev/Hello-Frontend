@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 15px;
     
     .header__menu-item {
       font-family: 'Lato';
@@ -43,3 +44,4 @@
   z-index: 10;
   background: #e0e0e1;
 }
+

@@ -7,13 +7,13 @@
 .playpause {
   background-image:url(../../src/img/icon\ play.svg);
   background-repeat:no-repeat;
-  width: 120px;
-  height: 120px;
+  width: 20%;
+  height: 20%;
   position:absolute;
   left:0%;
-  right:0%;
+  right:8%;
   top:0%;
-  bottom:0%;
+  bottom:8%;
   margin:auto;
   background-size:contain;
   background-position: center;
@@ -31,6 +31,7 @@
     width: 100%;
     opacity: 0.8;
     object-fit: cover;
+    border-radius: 8px;
   }
 }
 
