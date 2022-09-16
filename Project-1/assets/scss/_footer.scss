@@ -37,6 +37,10 @@
 
       a {
         color: #262A3F;
+
+        &:hover {
+          color: #85BBB1;
+        }
       }
     }
   }

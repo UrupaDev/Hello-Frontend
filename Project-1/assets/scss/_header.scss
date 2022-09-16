@@ -26,11 +26,50 @@
       letter-spacing: 0.08em;
       
       a {
-        color: #262A3F;
-  
-        &:hover {
-          color: #85BBB1;
-        }
+        background-image: linear-gradient(
+          to right,
+          #85BBB1,
+          #85BBB1 50%,
+          #262A3F 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      a:before{
+        content: '';
+        background: #85BBB1;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      a:hover {
+       background-position: 0;
+      }
+      
+      a:hover::before{
+        width: 100%;
+      }
+      
+      /* Presentational Styles */
+      body {
+        display: grid;
+        font-family: 'Poppins', sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+        height: 100vh;
+        place-items: center;
       }
     }
   }

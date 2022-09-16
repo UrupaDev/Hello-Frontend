@@ -5,18 +5,11 @@
 }
 
 .playpause {
-  background-image:url(../../src/img/icon\ play.svg);
-  background-repeat:no-repeat;
-  width: 20%;
-  height: 20%;
   position:absolute;
-  left:0%;
-  right:8%;
-  top:0%;
-  bottom:8%;
-  margin:auto;
-  background-size:contain;
-  background-position: center;
+  width: 13.8%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .products__video {
