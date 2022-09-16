@@ -128,6 +128,18 @@
   .products__conteiner {
     padding-top: 50px;
 
+    .products__video .video-play {
+      width: 60px;
+      height: 60px;
+
+      &::before {
+        left: 25px;
+        border-top-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 19px;
+      }
+    }
+
     .products__content {
       text-align: center;
     }

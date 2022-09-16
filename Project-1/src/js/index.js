@@ -39,20 +39,19 @@ menu.addEventListener("click", function(e) {
   menu.classList.toggle('close')
 })
 
-// video button play/pause
-$('.video').parent().click(function () {
-  
-  if ($(this).children(".video").get(0).paused){        
-    $(this).children(".video").get(0).play();   
-    $(this).children(".playpause").fadeOut();
-    } else {       
-    $(this).children(".video").get(0).pause();
-    $(this).children(".playpause").fadeIn();
-    }
-});
-
-// light/dark mode
-$(".checkbox").click(function() {
-  $(".body").toggleClass(".dark_mode");
+// video play
+$(function () {
+  var $videoContainer = $('.video'),
+     $videoControls = $('.video-control'),
+     $video = $('.my-video')[0];
+     $videoControls.click(function () {
+     if ($video.paused) {
+        $video.play();
+        $videoContainer.addClass('video-is-playing');
+     } else {
+        $video.pause();
+        $videoContainer.removeClass('video-is-playing');
+     }
+  });
 });
 

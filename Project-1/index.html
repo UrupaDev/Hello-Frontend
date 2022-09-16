@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="libraries/reset.css">
     <link rel="stylesheet" href="libraries/animate.min.css">
+    <link rel="stylesheet" href="libraries/icon_style.css">
+    <script src="libraries/jquery-3.6.1.min.js"></script>
     <title>SOLIS</title>
   </head>
   <body class="body">
@@ -164,10 +166,11 @@
                 <circle cx="6.5" cy="6.5" r="6" stroke="#E4E4E4"/>
               </svg>
             </div>
-            <div class="products__video">
-              <img class="playpause" src="src/img/icon-play.svg" alt="play">
-              <video class="video" src="src/video/abstract_building.mp4" poster="src/img/screensaver-video.webp" 
-              preload="metadata" controls></video>
+            <div class="products__video video">
+              <div class="video-control video-play"></div>
+              <div class="video-control video-over"></div>
+              <video class="my-video" src="src/video/abstract_building.mp4" poster="src/img/screensaver-video.webp" 
+              preload="metadata"></video>
             </div>
             <div class="player-decor-button2">
               <svg width="35" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">

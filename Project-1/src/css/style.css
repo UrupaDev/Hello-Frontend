@@ -602,29 +602,66 @@
   margin: 0 8px;
 }
 
-.playpause {
-  position: absolute;
-  width: 13.8%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .products__video {
-  border-radius: 8px;
-  position: relative;
   margin: 31px 0;
 }
 
-.products__video video {
+.products__video .video-over {
+  position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
+  z-index: 1;
+  display: none;
+}
+
+.products__video .video-play {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(88, 98, 145, 0.3);
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.products__video .video-play::before {
+  content: "\e904";
+  color: #262A3F;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border: 29px solid transparent;
+  border-top-width: 21px;
+  border-bottom-width: 21px;
+  border-left-color: #262A3F;
+  border-right-width: 0;
+  transition: transform 0.2s ease;
+}
+
+.products__video .video-play::before:hover::before {
+  transform: scale(1.2);
+}
+
+.video-is-playing .video-over {
+  display: block;
+}
+
+.video-is-playing .video-play {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .player-decor-button2 {
@@ -1149,6 +1186,18 @@
 
   .products__conteiner {
     padding-top: 50px;
+  }
+
+  .products__conteiner .products__video .video-play {
+    width: 60px;
+    height: 60px;
+  }
+
+  .products__conteiner .products__video .video-play::before {
+    left: 25px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 19px;
   }
 
   .products__conteiner .products__content {
