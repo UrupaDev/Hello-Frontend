@@ -191,7 +191,6 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  /* Presentational Styles */
 }
 
 .header__menu .header__menu-items .header__menu-item a {
@@ -224,15 +223,6 @@
 
 .header__menu .header__menu-items .header__menu-item a:hover::before {
   width: 100%;
-}
-
-.header__menu .header__menu-items .header__menu-item body {
-  display: grid;
-  font-family: "Poppins", sans-serif;
-  font-size: 27px;
-  font-weight: 700;
-  height: 100vh;
-  place-items: center;
 }
 
 .sticky {
@@ -470,68 +460,6 @@
 .submit:hover .resources__submit-shadow {
   background-color: rgba(229, 79, 58, 0.3);
   transition: all 0.1s ease-in-out;
-}
-
-.light-dark-mode {
-  display: flex;
-  align-items: flex-end;
-  width: 60px;
-  height: 34px;
-}
-
-.light-dark-mode .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.light-dark-mode .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.light-dark-mode .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-}
-
-.light-dark-mode .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-}
-
-.light-dark-mode input:checked + .slider {
-  background-color: #262A3F;
-}
-
-.light-dark-mode input:focus + .slider {
-  box-shadow: 0 0 1px #262A3F;
-}
-
-.light-dark-mode input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.light-dark-mode .slider.round {
-  border-radius: 34px;
-}
-
-.light-dark-mode .slider.round:before {
-  border-radius: 50%;
 }
 
 .about__item {
