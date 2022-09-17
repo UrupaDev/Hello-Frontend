@@ -35,6 +35,7 @@
       transition: 0.4s;
     }
   }
+
   &_active {
     span {
       height: 0;
@@ -42,6 +43,7 @@
         transform: rotate(45deg);
         width: 25px;
       }
+
       &::after {
         transform: rotate(-45deg);
         width: 25px;
@@ -54,7 +56,7 @@
 .header__conteiner .header__items_active {
   padding: 0;
   position: relative;
-  height: 350px;
+  display: block;
   
   .header__logo {
     display: none;

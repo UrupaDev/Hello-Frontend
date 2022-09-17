@@ -963,7 +963,7 @@
 .header__conteiner .header__items_active {
   padding: 0;
   position: relative;
-  height: 350px;
+  display: block;
 }
 
 .header__conteiner .header__items_active .header__logo {
@@ -1027,10 +1027,17 @@
   .section-info__conteiner .section-info__items {
     display: flex;
     flex-direction: column;
-    height: 1600px;
+  }
+
+  .section-info__conteiner .section-info__items .home__section-info-right {
+    max-width: 570px;
+    margin: auto;
+    width: 100%;
+    display: block;
   }
 
   .section-info__conteiner .section-info__items .home__section-info-left {
+    max-height: none;
     position: static;
     margin-top: 0;
     width: 100%;
@@ -1056,10 +1063,6 @@
 
   .section-info__conteiner .section-info__items .home__section-info-left div {
     margin: auto;
-  }
-
-  .section-info__conteiner .section-info__items .home__section-info-left div .home__section-info-button {
-    padding-top: 50px;
   }
 
   .about__conteiner {
@@ -1238,16 +1241,11 @@
     flex-direction: column;
   }
 
-  .header__conteiner .header__items {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .header__conteiner .header__items .header__burger-menu {
     display: block;
     position: absolute;
     top: 62px;
-    right: 93px;
+    right: 0;
   }
 }
 

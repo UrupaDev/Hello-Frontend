@@ -30,9 +30,16 @@
     .section-info__items {
       display: flex;
       flex-direction: column;
-      height: 1600px;
+
+      .home__section-info-right {
+        max-width: 570px;
+        margin: auto;
+        width: 100%;
+        display: block;
+      }
   
       .home__section-info-left {
+        max-height: none;
         position: static;
         margin-top: 0;
         width: 100%;
@@ -66,10 +73,6 @@
   
         div {
           margin: auto;
-
-          .home__section-info-button {
-            padding-top: 50px;
-          }
         }
       }
     }
@@ -255,14 +258,12 @@
   }
 
   .header__conteiner .header__items {
-    display: flex;
-    justify-content: space-between;
 
     .header__burger-menu  {
       display: block;
       position: absolute;
       top: 62px;
-      right: 93px;
+      right: 0;
     }
   }
 }
