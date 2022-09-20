@@ -88,3 +88,42 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .pricing__items {
+    width: 370px;
+    margin: auto;
+    padding-top: 0;
+
+    .pricing__title {
+      max-width: 1170px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .pricing__cards {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .pricing__items {
+    width: 300px;
+
+    .pricing__cards {
+      padding: 10px 20px;
+
+      .pricing__card {
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

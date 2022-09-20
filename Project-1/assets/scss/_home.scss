@@ -66,6 +66,18 @@
       text-align: center;
       color: #262A3F;
       padding-bottom: 12px;
+
+      &::before {
+        content: '$';
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: #E4E4E4;
+        padding-right: 10px;
+      }
     }
 
     p {
@@ -113,6 +125,74 @@
     p {
       padding-top: 25px;
       text-align: start;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home__bg::after {
+    display: none;
+  }
+
+  .home__content {
+    padding: 160px 15px 345px 50px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .section-info__conteiner {
+    height: 100%;
+
+    .section-info__items {
+      display: flex;
+      flex-direction: column;
+
+      .home__section-info-right {
+        max-width: 570px;
+        margin: auto;
+        width: 100%;
+        display: block;
+      }
+  
+      .home__section-info-left {
+        max-height: none;
+        position: static;
+        margin-top: 0;
+        width: 100%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+        "grid5"
+        "grid6";
+  
+        .home__item {
+          
+          .home__deco-line {
+            margin: auto;
+            margin-top: 40px;
+          }
+        
+          h4 {
+            font-size: 56px;
+          }
+        }
+
+        .info4 p {
+          padding-top: 20px;
+        }
+  
+        div {
+          margin: auto;
+        }
+      }
     }
   }
 }

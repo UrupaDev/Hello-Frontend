@@ -1,8 +1,15 @@
 * {
   box-sizing: border-box;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 *a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  
+  body.lock {
+    overflow: hidden;
+  }
 }

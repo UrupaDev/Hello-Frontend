@@ -72,3 +72,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .resources__items {
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    .resources__contacts {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .resources__form {
+      padding: 0 40px 0 0;
+      margin: auto;
+    }
+  }
+}

@@ -29,3 +29,34 @@
   border-bottom: 1px solid #E4E4E4;
   border-top: 1px solid #E4E4E4;
 }
+
+@media (max-width: 768px) {
+  .about__conteiner {
+    padding: 0 0 50px 0;
+
+    .about__items {
+      padding-top: 0;
+      grid-template-columns: 1fr;
+  
+      .about__item {
+        height: 270px;
+        padding: 0 15px;
+        max-width: 350px;
+        margin: auto;
+  
+        &:last-child {
+          border-top: 1px solid #E4E4E4;
+        }
+
+        h2 {
+          padding: 20px 0 10px 0;
+          font-size: 28px;
+        }
+        
+        p {
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+}
