@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/Union.ico">
+    <link rel="stylesheet" href="libraries/reset.css">
+    <link rel="stylesheet" href="libraries/animate.min.css">
+    <link rel="stylesheet" href="libraries/icon_style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="libraries/jquery-3.6.1.min.js"></script>
+    <title>SOLIS</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div id="my-header">
+        <div class="header__bg"></div>
+          <div class="header__conteiner">
+            <div class="header__items wow animate__fadeInRight">
+              <a href="#home" class="header__logo">
+                <svg width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.094 4.75l2.426 2.424L30.7 0h-4.915l-4.691 4.75zm10.933 3.362L28.6 4.75l3.427-3.424v6.786zM6.08 19.749l6.178-6.173 2.426 2.423-6.178 6.174-2.426-2.424zm15.01.002l6.18-6.174 2.425 2.424-6.178 6.173-2.426-2.424zm-5.08-2.425l-2.425 2.424 6.178 6.173 2.426-2.424-6.178-6.173zm-3.748 3.75l6.18 6.174-2.427 2.487-6.18-6.237 2.427-2.424zm18.828-3.75l.938.937v4.849L28.6 19.75l2.49-2.424zM2.326 15.999l6.179-6.174 2.426 2.424-6.179 6.174-2.426-2.424zm21.19-6.172L17.337 16l2.426 2.424 6.18-6.173-2.427-2.424zm3.757-3.751l4.754 4.687v4.849L24.847 8.5l2.426-2.424zM13.587 4.75l6.18 6.174L22.193 8.5l-6.18-6.237-2.426 2.487zm-1.329 1.327L9.832 8.5l6.179 6.173 2.426-2.424-6.179-6.173zM25.947 27.25l-2.427-2.424L16.402 32h4.853l4.692-4.75zM12.26 28.576l2.426 2.486-.938.938H8.896l3.364-3.424zm-1.327-1.326l-2.427-2.424L1.327 32h4.915l4.692-4.75zm13.913-3.75l2.426-2.424 4.754 4.687v4.911l-7.18-7.174zM0 23.888v6.786l3.427-3.424L0 23.888zM23.909 32l3.364-3.424L30.701 32h-6.792zM17.34.937l2.427 2.487L23.132 0h-4.853l-.939.938zM8.12 0L4.754 3.424 1.327 0h6.792zM4.754 25.924L7.18 23.5 0 16.388v4.849l4.754 4.687zm3.753-18.75L6.081 4.75 10.772 0h4.853L8.507 7.174zm-3.753 3.75L7.18 8.5 0 1.326v4.91l4.754 4.688zM3.427 12.25L.938 14.674 0 13.737V8.888l3.427 3.362z" fill="#fff"/>
+                </svg>
+                <svg class="logo-name" width="75" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.048 2.94c-.094.153-.19.267-.29.34a.624.624 0 01-.37.1.975.975 0 01-.481-.15 8.374 8.374 0 00-.59-.34 5.39 5.39 0 00-.781-.33 3.016 3.016 0 00-1.031-.16c-.694 0-1.214.157-1.561.47-.347.307-.52.71-.52 1.21 0 .32.093.587.28.8.193.207.443.387.75.54.314.153.667.29 1.06.41.395.12.798.253 1.212.4.414.14.817.307 1.211.5a4.17 4.17 0 011.05.73c.314.293.565.653.752 1.08.193.42.29.933.29 1.54 0 .66-.117 1.28-.35 1.86a4.4 4.4 0 01-.991 1.51c-.434.427-.971.763-1.612 1.01-.634.247-1.354.37-2.162.37-.46 0-.92-.047-1.38-.14a8.128 8.128 0 01-1.322-.39 7.38 7.38 0 01-1.191-.6 5.254 5.254 0 01-.98-.78l.88-1.42a.842.842 0 01.29-.26.719.719 0 01.38-.11c.18 0 .37.067.571.2.2.133.43.28.69.44.26.16.561.307.901.44.347.133.761.2 1.241.2.701 0 1.242-.16 1.622-.48.387-.32.58-.797.58-1.43 0-.367-.096-.663-.29-.89a2.237 2.237 0 00-.74-.57 5.669 5.669 0 00-1.051-.39 40.25 40.25 0 01-1.211-.37 9.941 9.941 0 01-1.212-.48 3.747 3.747 0 01-1.05-.74A3.57 3.57 0 01.89 5.92C.704 5.467.61 4.903.61 4.23a4.005 4.005 0 011.26-2.92A4.72 4.72 0 013.394.36C4 .12 4.694 0 5.475 0c.874 0 1.681.137 2.422.41.747.267 1.378.64 1.892 1.12l-.741 1.41zM27.84 7.41c0 1.06-.18 2.043-.54 2.95a6.812 6.812 0 01-1.512 2.35 6.996 6.996 0 01-2.342 1.56c-.914.373-1.929.56-3.043.56s-2.128-.187-3.042-.56a7.109 7.109 0 01-2.352-1.56 6.935 6.935 0 01-1.522-2.35 8.062 8.062 0 01-.53-2.95c0-1.06.177-2.04.53-2.94.36-.907.868-1.69 1.522-2.35A6.984 6.984 0 0117.36.57C18.275.19 19.289 0 20.403 0s2.129.19 3.043.57a6.803 6.803 0 012.342 1.56 6.813 6.813 0 011.511 2.35c.36.9.54 1.877.54 2.93zm-3.073 0c0-.76-.1-1.44-.3-2.04-.2-.607-.49-1.12-.871-1.54a3.597 3.597 0 00-1.371-.97c-.534-.227-1.141-.34-1.822-.34-.68 0-1.29.113-1.831.34-.54.22-1.001.543-1.381.97-.374.42-.661.933-.861 1.54-.2.6-.3 1.28-.3 2.04 0 .767.1 1.453.3 2.06.2.6.487 1.11.86 1.53.38.42.841.743 1.382.97.54.22 1.15.33 1.831.33.68 0 1.288-.11 1.822-.33.54-.227.997-.55 1.371-.97.38-.42.67-.93.87-1.53.2-.607.301-1.293.301-2.06zm15.484 4.82v2.44h-8.617V.16h3.002v12.07h5.615zm6.465 2.44h-3.023V.16h3.023v14.51zM59.221 2.94a1.17 1.17 0 01-.29.34.624.624 0 01-.37.1.975.975 0 01-.48-.15 8.385 8.385 0 00-.591-.34 5.39 5.39 0 00-.78-.33 3.016 3.016 0 00-1.032-.16c-.694 0-1.214.157-1.561.47-.347.307-.52.71-.52 1.21 0 .32.093.587.28.8.193.207.443.387.75.54.314.153.668.29 1.061.41.394.12.798.253 1.211.4.414.14.818.307 1.211.5a4.17 4.17 0 011.051.73c.314.293.564.653.75 1.08.194.42.291.933.291 1.54 0 .66-.117 1.28-.35 1.86a4.401 4.401 0 01-.991 1.51c-.434.427-.97.763-1.611 1.01-.634.247-1.355.37-2.162.37-.46 0-.921-.047-1.382-.14a8.128 8.128 0 01-1.32-.39 7.384 7.384 0 01-1.192-.6 5.25 5.25 0 01-.98-.78l.88-1.42a.842.842 0 01.29-.26.718.718 0 01.38-.11c.181 0 .371.067.571.2.2.133.43.28.691.44.26.16.56.307.9.44.348.133.761.2 1.242.2.7 0 1.24-.16 1.621-.48.387-.32.58-.797.58-1.43 0-.367-.096-.663-.29-.89a2.237 2.237 0 00-.74-.57 5.667 5.667 0 00-1.051-.39 40.23 40.23 0 01-1.211-.37 9.943 9.943 0 01-1.211-.48 3.75 3.75 0 01-1.051-.74 3.57 3.57 0 01-.75-1.14c-.188-.453-.281-1.017-.281-1.69a4.005 4.005 0 011.261-2.92 4.72 4.72 0 011.521-.95C54.174.12 54.867 0 55.648 0a6.95 6.95 0 012.422.41c.748.267 1.378.64 1.892 1.12l-.74 1.41z" fill="#fff"/>
+                </svg>
+              </a>
+              <div class="header__menu">
+                <ul class="header__menu-items">
+                  <li class="header__menu-item"> 
+                    <a href="#home">Home</a> 
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#about">About</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#products">Products</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#use-cases">Use Cases</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#pricing">Pricing</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#resources">Resources</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="header__burger-menu">
+              <div class="burger-menu__conteiner">
+                <span></span>
+              </div>
+            </div>
+            <div class="light-dark-mode">
+              <label class="switch">
+                <input id="dark-mode" class="checkbox" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="home__bg">
+          <div class="home__conteiner">
+            <div class="home__content">
+              <h1>A peer-to-peer stablecoin <span>clearinghouse</span>  for the new economy</h1>
+              <p>We are bringing real solutions to the payments world by leveraging public blockchains.</p>
+              <div class="home__button button-general">
+                <a href="#resources" class="home__button-box box-button-type1"> 
+                  <span>JOIN NOW</span> 
+                  <div class="general__button-shadow button-shadow1"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-info">
+        <div class="section-info__conteiner">
+          <div class="section-info__items">
+            <div class="home__section-info-right">
+              <img src="src/img/statistic-image.webp" alt="buildings">
+            </div>
+            <div class="home__section-info-left">
+              <div class="home__item info1">
+                <h4>1 tril </h4>
+                <p>Market cap potential</p>
+                <div class="home__deco-line"></div>
+              </div>
+              <div class="home__item info2">
+                <h4>3.65 mil</h4>
+                <p>Deposited to platform</p>
+                <div class="home__deco-line"></div>
+              </div>
+              <div class="home__item info3">
+                <h4>12</h4>
+                <p>Stablecoins</p>
+              </div>
+              <div class="home__item info4">
+                <p>Solis group is a new venture created with investments from and collaboration with XBTO International, 
+                  XBTO Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a 
+                  first-of-its-kind clearing house for stablecoins that seeks to promote the next phase of the market’s 
+                  development. 
+                   </p>
+              </div>
+              <div class="home__item info5">
+                <p>The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability 
+                  and accessibility which are currently preventing the stablecoin market from reaching critical mass.
+                </p>
+              </div>
+              <div>
+                <div class="home__section-info-button button-general info6">
+                  <a href="#resources" class="home__button-box box-button-type2"> 
+                    <span>Contact sales</span> 
+                    <div class="general__button-shadow button-shadow2"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about__conteiner">
+          <div class="about__items">
+            <div class="about__item item-deco">
+              <h2>Qualified <span>traders</span> and liquidty <span>solutions</span> </h2>
+              <p>Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD, Dai, Eurs and Gemini 
+                Dollar.</p>
+            </div>
+            <div class="about__item item-deco">
+              <h2>Settlement/OTC API and <span>integration</span> </h2>
+              <p>Integrate OTC operations and settlements using our efficient API.</p>
+            </div>
+            <div class="about__item">
+              <h2>The best <span>payments solutions</span></h2>
+              <p>For all stablecoin payments, from point-of-sale transactions to website solutions. If you use stablecoins 
+                in your business, Stablehouse is for you.</p>
+            </div>
+            <div class="about__item">
+              <h2> <span>Treasury</span> and <span>returns</span> for stablecoin stores</h2>
+              <p>Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <div class="quote__conteiner">
+          <article class="quote__content">
+            <svg class="quote__decor1" width="102" height="84" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M68.683 45.195c-.485-1.712-.731-3.68-.731-5.91 0-6.076 2.31-12.076 6.986-18.007 4.897-5.94 10.638-10.28 17.222-13.03l.495-.208-.24-.479-2.904-5.785-.216-.432-.44.202c-11.25 5.174-19.718 12.087-25.37 20.752h0l-.005.008c-5.43 8.656-8.141 18.391-8.141 29.194 0 8.43 1.844 15.6 5.56 21.481C65.297 79.99 71.805 83.5 80.356 83.5c5.93 0 10.898-1.975 14.869-5.931 4.18-4.166 6.276-9.222 6.276-15.14 0-6.33-2.085-11.4-6.286-15.15-3.97-3.95-8.934-5.922-14.86-5.922-4.377 0-8.273 1.28-11.67 3.838zm-54.839 0c-.485-1.712-.731-3.68-.731-5.91 0-6.076 2.31-12.076 6.986-18.007 4.898-5.94 10.638-10.28 17.223-13.03l.494-.208-.24-.479-2.903-5.785-.217-.432-.44.202C22.767 6.72 14.299 13.633 8.647 22.298h0l-.005.008C3.211 30.962.5 40.697.5 51.5c0 8.43 1.845 15.6 5.561 21.481C10.458 79.99 16.965 83.5 25.516 83.5c5.93 0 10.898-1.975 14.87-5.931 4.18-4.166 6.275-9.222 6.275-15.14 0-6.33-2.085-11.4-6.286-15.15-3.969-3.95-8.934-5.922-14.859-5.922-4.377 0-8.274 1.28-11.671 3.838z" stroke="url(#paint0_linear_3303_109)"/><defs><linearGradient id="paint0_linear_3303_109" x1=".75" y1="55.409" x2="121.357" y2="72.969" gradientUnits="userSpaceOnUse"><stop stop-color="#F1897B"/><stop offset="1" stop-color="#F1897B" stop-opacity="0"/></linearGradient></defs>
+            </svg>
+            <svg class="quote__decor2" width="102" height="84" viewBox="0 0 102 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M68.6832 45.1953C68.198 43.4828 67.9516 41.5149 67.9516 39.2857C67.9516 33.2091 70.2619 27.2093 74.9378 21.278C79.8355 15.3381 85.5761 10.9984 92.1605 8.24707L92.655 8.04045L92.4146 7.56148L89.5114 1.77575L89.2947 1.34382L88.8556 1.54574C77.6047 6.71993 69.1369 13.6332 63.4845 22.2983L63.4844 22.2982L63.4797 22.3058C58.0504 30.9616 55.3387 40.6975 55.3387 51.5C55.3387 59.9307 57.1833 67.0997 60.8999 72.9814C65.2964 79.9897 71.8038 83.5 80.3549 83.5C86.2844 83.5 91.2529 81.5253 95.2239 77.5685C99.4044 73.4029 101.5 68.3468 101.5 62.4286C101.5 56.0983 99.4146 51.0291 95.2141 47.279C91.2448 43.3286 86.2796 41.3571 80.3549 41.3571C75.9772 41.3571 72.081 42.6371 68.6832 45.1953ZM13.8445 45.1953C13.3593 43.4828 13.1129 41.5149 13.1129 39.2857C13.1129 33.2091 15.4232 27.2094 20.0989 21.2782C24.9967 15.3381 30.7374 10.9984 37.3218 8.24707L37.8163 8.04045L37.5759 7.56148L34.6727 1.77575L34.456 1.34382L34.0169 1.54574C22.766 6.71993 14.2982 13.6332 8.64574 22.2983L8.64568 22.2982L8.64095 22.3058C3.21167 30.9616 0.5 40.6975 0.5 51.5C0.5 59.9306 2.34459 67.0996 6.0611 72.9812C10.4576 79.9896 16.965 83.5 25.5161 83.5C31.4457 83.5 36.4142 81.5253 40.3852 77.5685C44.5657 73.4029 46.6613 68.3468 46.6613 62.4286C46.6613 56.0983 44.5758 51.0291 40.3754 47.2789C36.406 43.3286 31.4408 41.3571 25.5161 41.3571C21.1385 41.3571 17.2423 42.6371 13.8445 45.1953Z" stroke="url(#paint0_linear_3306_103)"/>
+              <defs><linearGradient id="paint0_linear_3306_103" x1="0.750061" y1="55.4086" x2="121.357" y2="72.9687" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#53F3CD"/><stop offset="1" stop-color="#53F3CD" stop-opacity="0"/></linearGradient></defs>
+            </svg>
+            <p class="quote__article">Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty 
+              over access and liquidity</p>
+            <p>Lennon Burnett, Solis Group CEO</p>
+          </article>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="products__conteiner">
+          <div class="products__items">
+            <div class="player-decor-button1">
+              <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6.5" cy="6.5" r="6"/>
+              </svg>
+            </div>
+            <div class="products__video video">
+              <div class="video-control video-play"></div>
+              <div class="video-control video-over"></div>
+              <video class="my-video" src="src/video/abstract_building.mp4" poster="src/img/screensaver-video.webp" 
+              preload="metadata"></video>
+            </div>
+            <div class="player-decor-button2">
+              <svg width="35" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17.5" cy="17.5" r="17"/>
+              </svg>
+            </div>
+          </div>  
+          <div class="products__content">
+            <h2>A <span>powerful API</span> , easy to use user interface</h2>
+            <p>Our API allows all members to interact with Stablehouse’s platform, from effecting transfers to 
+              deposits, withdrawals, creation and redemption and reporting.</p>
+          </div>
+        </div>
+      </section>
+      <section class="use-cases" id="use-cases">
+        <div class="use-cases__conteiner">
+          <div class="use-cases__items">
+            <div class="use-cases__info-right">
+              <img src="src/img/features-background-image.webp" alt="tile">
+            </div>
+            <div class="use-cases__info-left">
+              <div class="use-cases__item case1">
+                <h4>On-Exchange Trading</h4>
+                <ul>
+                  <li>Instant</li>
+                  <li>Passive Inventory earns fees</li>
+                </ul>
+              </div>
+              <div class="use-cases__item case2">
+                <h4>On-Chain Swaps</h4>
+                <ul>
+                  <li>Low Counterparty risk</li>
+                  <li>Direct transfers</li>
+                </ul>
+              </div>
+              <div class="use-cases__item case3">
+                <h4>Time Settlement Swaps</h4>
+                <p>LBTC / Lightning and other sidechain swaps</p>
+              </div>
+              <div>
+                <div class="home__section-info__button button-general case4">
+                  <a href="#resources" class="home__button-box box-button-type3"> 
+                    <span>JOIN NOW
+                      <div class="general__button-shadow button-shadow3"></div>
+                    </span> 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing" id="pricing">
+        <div class="pricing__conteiner">
+          <div class="pricing__items">
+            <div class="pricing__title">
+              <h2>Client <span>reviews</span> </h2>
+              <p>Happy clients, happy us. Read our client reviews about the work process and results.</p>
+            </div>
+            <div class="pricing__cards">
+              <div class="pricing__card wow animate__pulse">
+                <img src="src/img/client_sec_image1.webp" alt="industrial">
+                <p>Solis did a great job. Whether providing direct development support or giving us the opportunity to make 
+                  our development updates, Solis's web design expertise and support services were top notch! It didn't take 
+                  long to stand up our website, and we were pleased with the design and layout of the graphics and 
+                  information. </p>
+                <span>Dr. Jamika Burge</span>
+              </div>
+              <div class="pricing__card wow animate__pulse">
+                <img src="src/img/client_sec_image2.webp" alt="industrial">
+                <p>Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21 
+                  years, I know when I’ve found a competent professional and more importantly a company with integrity. I 
+                  highly recommend this company and am available for further reference if needed.</p>
+                <span>Evie-Rose Prosse</span>
+              </div>
+              <div class="pricing__card wow animate__pulse">
+                <img src="src/img/client_sec_image3.webp" alt="industrial">
+                <p>I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed 
+                  is a developer and can build a site from scratch. She understands functionality and is great at 
+                  constructing a site that is robust and fully functioning. </p>
+                <span>Elvis Mooney</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resources" id="resources">
+        <div class="resources__conteiner">
+          <div class="resources__items">
+            <div class="resources__contacts">
+              <h2>Contact <span>our sales team</span> </h2>
+              <p>Our team is happy to answer your sales questions.<br>Fill out the form and we’ll be in touch as soon as 
+                possible.</p>
+            </div>
+            <div class="resources__form">
+              <form action="/action_page.php" method="get">
+                <input class="input-style" type="text" id="name" name="name" placeholder="Your name"
+                minlength="1" maxlength="25" required>
+                <input class="input-style form-view" type="email" id="email" name="email" placeholder="Email" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64" required>
+                <input class="input-style form-view" type="text" id="more" name="more" placeholder="Tell more"
+                maxlength="150" required>
+                <div class="resources__submit">
+                  <button class="button-general submit" type="submit" id="submit">
+                    <div class="submit-text">SEND REQuest</div>
+                    <div class="resources__submit-shadow"></div>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__conteiner">
+        <div class="footer__items">
+          <div class="footer__item1 foo1">
+            <p>© 2020 Solisgroup. All Rights Reserved.</p>
+          </div>
+          <div class="footer__item2 foo2">
+            <span class="item2-made">made by</span>
+            <span class="item2-dev">UrupaDev</span>
+          </div>
+          <div class="footer__item3 foo3">
+            <ul class="item3-list">
+              <li> <a href="/#">User Agreement</a> </li>
+              <li> <a href="/#">Privacy Policy</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="libraries/wow.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
