@@ -1,0 +1,125 @@
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  .logo-name {
+    padding-left: 15px;
+  }
+}
+
+.header__menu {
+  min-width: 490px;
+  width: 100%;
+
+  .header__menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    
+    .header__menu-item {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+      
+      a {
+        background-image: linear-gradient(
+          to right,
+          #F1897B,
+          #F1897B 50%,
+          #262A3F 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      a:before{
+        content: '';
+        background: #F1897B;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      a:hover {
+       background-position: 0;
+      }
+      
+      a:hover::before{
+        width: 100%;
+      }
+    }
+  }
+
+  
+}
+
+.sticky {
+  position: fixed;
+  top: -30px;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background: #e0e0e1;
+}
+
+@media (max-width: 768px) {
+
+  .header__conteiner .header__items {
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+
+    .header__menu {
+      display: none;
+    }
+
+    .light-dark-mode {
+      display: none;
+    }
+  }
+
+  .header__conteiner .header__items_active {
+    padding: 0;
+    position: relative;
+    display: block;
+    
+    .header__logo {
+      display: none;
+    }
+  
+    .header__menu {
+      display: flex;
+      flex-direction: column;
+      min-width: 100px;
+      width: 100%;
+  
+      .header__menu-items {
+        flex-direction: column;
+        padding-top: 48px;
+        background: #fff;
+        padding-left: 15px;
+  
+        .header__menu-item {
+          padding-bottom: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  
+    .light-dark-mode {
+      display: none;
+    }
+  }
+}

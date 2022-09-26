@@ -1,0 +1,100 @@
+.use-cases__info-right {
+
+  img {
+    width: 100%;
+  }
+}
+
+.use-cases__info-left {
+  max-width: 770px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "case1 case2"
+    "case3 case4";
+  column-gap: 78px;
+  row-gap: 70px;
+  position: absolute;
+  right: 0;
+  background: #FFFFFF;
+  opacity: 0.9;
+  margin-top: 45px;
+  padding: 75px 70px;
+
+  .use-cases__item {
+
+    h4 {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      color: #262A3F;
+    }
+
+    ul li, p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #262A3F;
+      padding-top: 15px;
+    }
+  }
+
+  .case1 {
+    grid-area: case1;
+  }
+
+  .case2 {
+    grid-area: case2;
+  }
+
+  .case3 {
+    grid-area: case3;
+  }
+
+  .case4 {
+    grid-area: case4;
+  }
+}
+
+@media (max-width: 768px) {
+  .use-cases__conteiner {
+    min-height: 660px;
+    height: 100%;
+    background:url(../../src/img/features-background-image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0;
+
+    .use-cases__items {
+      padding-top: 50px;
+    
+      .use-cases__info-right img {
+        visibility: hidden;
+      }
+    }
+      .use-cases__info-left {
+       background: none;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(4, 1fr);
+       grid-template-areas: 
+       "case1"
+       "case2"
+       "case3"
+       "case4";
+       padding: 20px;
+       text-align: center;
+       row-gap: 20px;
+       margin-top: 0;
+  
+       .use-cases__item h4, .use-cases__item ul li, .use-cases__item p {
+        color: #fff;
+       }
+    }
+  }
+}
