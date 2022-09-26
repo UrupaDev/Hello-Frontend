@@ -1,0 +1,131 @@
+.player-decor-button1 {
+  width: 13px;
+  height: 13px;
+  margin: 0 8px;
+  stroke: #E4E4E4;
+}
+
+.products__video {
+  margin: 31px 0;
+
+  .video-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .video-play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(88,98,145,0.3);
+    z-index: 1;
+    cursor: pointer;
+    transition: .2s ease;
+
+    &::before {
+      content: "\e904";
+      color: #262A3F;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 50px;
+      width: 0;
+      height: 0;
+      border: 29px solid transparent;
+      border-top-width: 21px;
+      border-bottom-width: 21px;
+      border-left-color: #262A3F;
+      border-right-width: 0;
+      transition: transform .2s ease;
+
+      &:hover {
+        &::before {
+           transform: scale(1.2);
+        }
+      }
+    }  
+  }
+}
+
+.video-is-playing {
+
+  .video-over {
+    display: block;
+  }
+
+  .video-play {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.player-decor-button2 {
+  width: 35px;
+  height: 35px;
+  margin: 0 14px 0 21px;
+  stroke: #E4E4E4;
+}
+
+.products__content {
+  padding-top: 50px;
+  color: #262A3F;
+  font-style: normal;
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 20px;
+
+    span {
+      color: #85BBB1;
+      font-style: italic;
+    }
+  }
+
+  p {
+    max-width: 897px;
+    width: 100%;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products__conteiner {
+    padding-top: 50px;
+
+    .products__video .video-play {
+      width: 60px;
+      height: 60px;
+
+      &::before {
+        left: 25px;
+        border-top-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 19px;
+      }
+    }
+
+    .products__content {
+      text-align: center;
+    }
+  }
+}
+
