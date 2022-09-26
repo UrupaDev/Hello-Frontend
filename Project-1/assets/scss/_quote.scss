@@ -1,0 +1,56 @@
+.quote__content {
+  position: relative;
+  padding: 100px 300px 100px 160px;
+  font-weight: 400;
+  color: #FFFFFF;
+  
+  .quote__decor1 {
+    position: absolute;
+    left: 101px;
+    top: 112px;
+  }
+
+  .quote__decor2 {
+    display: none;
+  }
+
+  .quote__article {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+  }
+
+  p {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote__content {
+    padding: 30px;
+
+    svg {
+      left: -25px;
+      top: -13px;
+      transform: scale(0.4);
+    }
+
+    .quote__article {
+      font-size: 16px;
+      line-height: 25px;
+      padding: 0;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 15px 0;
+    }
+  }
+}

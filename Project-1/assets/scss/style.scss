@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../../src/fonts/Lato-Light.woff2);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../../src/fonts/Lato-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../../src/fonts/Lato-Bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../../src/fonts/PlayfairDisplay-Regular.woff2);
+  font-weight: 400;
+}
+
+@import "_general", "_conteiners", "header__burger-menu", "_header", "_home", "_buttons", "_about", "_quote", "_products_video", "_use-cases",
+"_pricing", "_resurces", "_footer", "_dark_mode.scss";
