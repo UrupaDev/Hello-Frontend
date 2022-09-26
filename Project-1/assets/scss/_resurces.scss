@@ -1,4 +1,14 @@
 .resources__contacts {
+<<<<<<< HEAD
+  
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    color: #262A3F;
+=======
   color: #262A3F;
   font-style: normal;
 
@@ -7,6 +17,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 39px;
+>>>>>>> master
     padding-bottom: 29px;
 
     span {
@@ -17,15 +28,27 @@
 
   p {
     font-family: 'Lato';
+<<<<<<< HEAD
+    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
+    color: #262A3F;
+=======
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+>>>>>>> master
     opacity: 0.8;
   }
 }
 
 .resources__form {
+<<<<<<< HEAD
+  padding-left: 120git statuspx;
+=======
   padding-left: 120px;
+>>>>>>> master
   display: flex;
   flex-direction: column;
 
@@ -43,11 +66,19 @@
       color: #262A3F;
       padding-bottom: 12px;
       border-bottom: 1px solid rgb(38, 42, 63, 0.1);
+<<<<<<< HEAD
+    }
+
+    .input-style::placeholder {
+      opacity: 0.5;
+      font-style: italic;
+=======
 
       &:focus {
         border-bottom: 2px solid rgba(241, 137, 123, 0.3);
         transition: all 0.2s ease-in-out;
       }
+>>>>>>> master
     }
 
     .input-style {
@@ -55,11 +86,14 @@
       font-style: normal;
     }
 
+<<<<<<< HEAD
+=======
     .input-style::placeholder {
       opacity: 0.5;
       font-style: italic;
     }
 
+>>>>>>> master
     .form-view {
       padding-top: 40px;
     }
@@ -69,6 +103,39 @@
       height: 24px;
       margin-top: 40px;
       position: relative;
+<<<<<<< HEAD
+      
+      input {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #F1897B;
+        background: none;
+
+        &:hover {
+          color: #E54F3A;
+        }
+      }
+
+      .resources__submit-shadow {
+        width: 163px;
+        height: 13px;
+        background: #F1897B;
+        opacity: 0.3;
+        position: absolute;
+        left: 16px;
+        top: 11px;
+        z-index: -1;
+      }
+
+      .submit {
+        border-bottom: none;
+      }
+=======
     }
   }
 }
@@ -86,6 +153,7 @@
     .resources__form {
       padding: 0 40px 0 0;
       margin: auto;
+>>>>>>> master
     }
   }
 }
