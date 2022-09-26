@@ -33,11 +33,12 @@ burger.addEventListener("click", function(e) {
     header__items.classList.toggle('header__items_active');
 }, false);
 
-menu.addEventListener("click", function(e) {
-  menu.classList.toggle('header__burger-menu_active');
-  burger.classList.toggle('header__burger-menu_active');
-  header__items.classList.toggle('header__items_active');
-}, false)
+// close burger menu if click menu items
+$('.header__menu-item').click (function () {
+  $('.header__menu-item').toggleClass('header__burger-menu_active');
+  $('.header__burger-menu').toggleClass('header__burger-menu_active');
+  $('.header__items').toggleClass('header__items_active');
+});
 
 // video play
 $(function () {
