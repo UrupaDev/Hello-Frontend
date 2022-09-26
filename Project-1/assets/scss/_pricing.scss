@@ -1,0 +1,129 @@
+.pricing__title {
+  max-width: 400px;
+  width: 100%;
+  color: #262A3F;
+  font-style: normal;
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 20px;
+
+    span {
+      color: #85BBB1;
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.pricing__cards {
+  padding: 50px 0 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  border-bottom: 1px solid #E4E4E4;
+
+  .pricing__card {
+    height: 340px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1); 
+      transition: all 0.3s ease-in-out;
+      box-shadow: 3px 2px 15px 5px rgba(0,0,0,0.5);
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: url(../../src/img/overlay.webp);
+    }
+
+    p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+      z-index: 2;
+      opacity: 0.8;
+    }
+
+    span {
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing__items {
+    width: 370px;
+    margin: auto;
+    padding-top: 0;
+
+    .pricing__title {
+      max-width: 1170px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .pricing__cards {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .pricing__items {
+    width: 300px;
+
+    .pricing__cards {
+      padding: 10px 20px;
+
+      .pricing__card {
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

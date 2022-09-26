@@ -1,0 +1,227 @@
+@use "_reset.scss";
+@use "_icon-style.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("../../fonts/Roboto-Light.ttf"), url("../../fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bebas Neue Thin";
+  src: local("../../fonts/BebasNeue Thin.otf"), url("../../fonts/BebasNeue Thin.otf");
+}
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: local("../../fonts/BebasNeue Book.otf"), url("../../fonts/BebasNeue Book.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("../../fonts/BebasNeue Regular.otf"), url("../../fonts/BebasNeue Regular.otf");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #9789F9;
+}
+
+.main__conteiner {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  padding: 0 15px;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+    .item {
+      background: #F5F3F9;
+
+      .top_part {
+
+        .top_part-items {
+          text-align: center;
+          padding-top: 40px;
+          position: relative;
+
+          span {
+            font-family: 'Bebas Neue Thin';
+            font-size: 60px;
+            line-height: 60px;
+            letter-spacing: 0.08em;
+            color: #000000;
+            display: inline-block;
+            width: 47px;
+          }
+          
+          sup {
+            font-family: 'Bebas Neue Thin';
+            font-size: 24px;
+            line-height: 28px;
+            color: #181818;
+            vertical-align: top;
+          }
+          sub {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 36px;
+            letter-spacing: 0.08em;
+            color: #000000;
+            vertical-align:bottom;
+            opacity: 0.5;
+          }
+
+          .top_part-items-central-icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            
+            svg {
+              fill: #FD8D7B;
+
+            &:hover {
+              fill: #ff6952;
+            }
+           }
+          }
+
+          img {
+            position: absolute;
+            right: -75px;
+            top: 25px;
+            visibility: hidden;
+          }
+
+        }
+        .top_part-items-central-card {
+          padding-top: 50px;
+        }
+
+        .top_part-items-dir {
+          font-family: 'Bebas Neue Book';
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.04em;
+          color: #000000;
+          padding: 10px 0 30px 0;
+        }
+
+        .top_part-items-dir-central {
+          padding-bottom: 40px;
+        }
+      }
+        p {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.04em;
+          color: #A9A9A9;
+          padding: 44px 0 30px 0;
+        }
+        
+      }
+      .middle_part {
+        background: url(../../img/bg-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .icon {
+          text-align: center;
+          padding-top: 40px;
+          font-size: 24px;
+        }
+
+        .middle_part-list {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.04em;
+          color: #000000;
+          padding: 10px 0 60px 110px;
+          
+          li {
+            padding-top: 30px;
+          }
+        }
+      }
+      .bottom_part {
+        text-align: center;
+        height: 57px;
+        position: relative;
+
+        .button {
+          text-decoration: none;
+
+          .button-order {
+            width: 200px;
+            height: 54px;
+            background: #6FCFFB;
+            border-radius: 30px;
+            align-items: center;
+            border: none;
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            margin-top: 29px;
+
+            &:hover {
+              background: #FD8D7B;
+            }
+          }
+          .button-order-central {
+            margin-top: -25px;
+          }
+        }
+      }
+      .bottom_part-central {
+        height: 0;
+      }
+    }
+  }
+
+  .main__conteiner .items .item .top_part .top_part-items:hover img {
+    visibility: visible;
+  }
+
+  @media (max-width: 768px) {
+    .main__conteiner .items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .main__conteiner .items .middle_part .middle_part-list {
+      padding: 10px 0 60px 0;
+      text-align: center;
+
+      li {
+        font-size: 24px;
+      }
+    }
+    .main__conteiner .items .item .top_part .top_part-items img {
+      display: none;
+    }
+  }
