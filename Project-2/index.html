@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libraries/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
+    <title>Monticello</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="header__bg">
+        <div class="header__conteiner">
+          <div class="header__nav">
+            <div class="header__nav-items">
+              <div class="header__logo">
+                <a href="#home"><img src="src/img/Logo.svg" alt="logo"></a> 
+              </div>
+              <div class="header__menu">
+                <div class="header__menu-items">
+                  <div class="header__menu-item">
+                    <input type="radio" name="menu-item" id="menu-item1" checked>
+                    <label class="header__menu-label" for="menu-item1">ABOUT US</label>
+                  </div>
+                  <div class="header__menu-item">
+                    <input type="radio" name="menu-item" id="menu-item2">
+                    <label class="header__menu-label" for="menu-item2">PROJECTS</label>
+                  </div>
+                  <div class="header__menu-item">
+                    <input type="radio" name="menu-item" id="menu-item3">
+                    <label class="header__menu-label" for="menu-item3">NEWS</label>
+                  </div>
+                  <div class="header__menu-item">
+                    <input type="radio" name="menu-item" id="menu-item4">
+                    <label class="header__menu-label" for="menu-item4">CONTACT</label>
+                  </div>
+                </div>
+              </div>
+              <div class="header__social">
+                <a href="https://www.facebook.com/" target="_blank" class="header__social-item">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="header__social-item">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="header__social-item">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__heading">
+            <h1>SIMPLE & MODERN</h1>
+            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          </div>
+          <div class="header__dots">
+            <input type="radio" name="dot" class="header__dot" checked>
+            <input type="radio" name="dot" class="header__dot">
+            <input type="radio" name="dot" class="header__dot">
+            <input type="radio" name="dot" class="header__dot">
+            <input type="radio" name="dot" class="header__dot">
+          </div>
+          <div class="header__scroll">
+            <button class="header__scroll-circle">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__conteiner">
+          <div class="about__title">
+            <svg height="2" width="100" class="line">
+              <line x1="0" y1="0" x2="100" y2="0" style="stroke:#2C4058;stroke-width:1" />
+            </svg>
+            <h2>WHAT WE DO</h2>
+          </div>
+          <div class="about__items">
+            <div class="about__item about__item1">
+              <div class="item-img1">
+                <div></div>
+                <img src="src/img/about_img1.webp" alt="building">
+              </div>
+              <div class="item-content">
+                <p class="content-subtitle">ONE WORLD</p>
+                <h3>TRADE CENTER</h3>
+                <p class="content-text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. 
+                  The truth is, our thoughts are very powerful.</p>
+                <button>MORE DETAILS</button>
+                <a href="/#">
+                  <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                  <span>New York City, United States - 1776 feet </span>
+                </a>
+              </div>
+            </div>
+            <div class="about__item about__item2">
+              <div class="item-content">
+                <p class="content-subtitle">INTERNATIONAL</p>
+                <h3>COMMERCE CENTRE</h3>
+                <p class="content-text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition 
+                  and how a digital advertising network may help.</p>
+                <button>MORE DETAILS</button>
+                <a href="/#">
+                  <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                  <span>Hong Kong - 1588 feet</span>
+                </a>
+              </div>
+              <div class="item-img2">
+                <div></div>
+                <img src="src/img/about_img2.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>

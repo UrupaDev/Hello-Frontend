@@ -1,0 +1,185 @@
+.header {
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+
+  .header__bg {
+    background: url(../../src/img/bg_home.webp);
+    background-size: cover;
+
+    .header__conteiner {
+      max-width: 1600px;
+      width: 100%;
+      margin: auto;
+      color: #FFFFFF;
+      position: relative;
+
+      .header__nav {
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+
+        .header__nav-items {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 53px;
+
+          .header__menu {
+            max-width: 515px;
+            width: 100%;
+            margin: auto;
+
+            .header__menu-items {
+              display: flex;
+              justify-content: space-between;
+
+              .header__menu-item {
+                display: flex;
+
+                .header__menu-label {
+                  font-family: 'Source Sans Pro';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 18px;
+                  padding-left: 14px;
+                  cursor: pointer;
+                }
+  
+                input[type="radio"]{
+                  visibility: hidden;
+                  height: 0;
+                  width: 0;
+                }
+  
+                input[type='radio']:after {
+                  width: 7px;
+                  height: 7px;
+                  border-radius: 15px;
+                  top: 0;
+                  position: relative;
+                  background-color: transparent;
+                  content: '';
+                  display: inline-block;
+                  visibility: visible;
+                  border: 1px solid white;
+              }
+          
+              input[type='radio']:checked:after {
+                  width: 7px;
+                  height: 7px;
+                  border-radius: 15px;
+                  top: 0;
+                  position: relative;
+                  background-color: #FFFFFF;
+                  content: '';
+                  display: inline-block;
+                  visibility: visible;
+              }
+              }
+            }
+          }
+  
+          .header__social {
+            display: flex;
+            gap: 20px;
+  
+            .header__social-item {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 1px solid #FFFFFF;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #FFFFFF;
+
+              i {
+                top: 5px;
+                left: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .header__heading {
+        max-width: 925px;
+        width: 100%;
+        margin: auto;
+        padding-top: 223px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        text-align: center;
+
+        h1 {
+          font-weight: 700;
+          font-size: 80px;
+          line-height: 98px;
+          letter-spacing: 0.1em;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.3em;
+        }
+      }
+
+      .header__dots {
+        position: absolute;
+        top: 295px;
+        right: 52px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        input[type="radio"]{
+          visibility: hidden;
+          height: 0;
+          width: 0;
+        }
+
+        input[type='radio']:after {
+          width: 8px;
+          height: 8px;
+          border-radius: 15px;
+          top: 0;
+          position: relative;
+          background-color: transparent;
+          content: '';
+          display: inline-block;
+          visibility: visible;
+          border: 1px solid white;
+      }
+  
+      input[type='radio']:checked:after {
+          width: 8px;
+          height: 8px;
+          border-radius: 15px;
+          top: 0;
+          position: relative;
+          background-color: #FFFFFF;
+          content: '';
+          display: inline-block;
+          visibility: visible;
+      }
+      }
+
+      .header__scroll {
+        padding-bottom: 50px;
+        margin-top: 240px;
+        display: flex;
+        justify-content: center;
+
+        .header__scroll-circle {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid #FFFFFF;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

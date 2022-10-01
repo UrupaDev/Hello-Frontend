@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../src/fonts/Montserrat-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../src/fonts/Montserrat-Bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../src/fonts/OpenSans-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../src/fonts/OpenSans-Italic.woff2);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../../src/fonts/SourceSansPro-Regular.woff2);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.header {
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+}
+
+.header .header__bg {
+  background: url(../../src/img/bg_home.webp);
+  background-size: cover;
+}
+
+.header .header__bg .header__conteiner {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.header .header__bg .header__conteiner .header__nav {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 53px;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu {
+  max-width: 515px;
+  width: 100%;
+  margin: auto;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item {
+  display: flex;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item .header__menu-label {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item input[type=radio] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item input[type=radio]:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 15px;
+  top: 0;
+  position: relative;
+  background-color: transparent;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item input[type=radio]:checked:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 15px;
+  top: 0;
+  position: relative;
+  background-color: #FFFFFF;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__social {
+  display: flex;
+  gap: 20px;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__social .header__social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.header .header__bg .header__conteiner .header__nav .header__nav-items .header__social .header__social-item i {
+  top: 5px;
+  left: 5px;
+}
+
+.header .header__bg .header__conteiner .header__heading {
+  max-width: 925px;
+  width: 100%;
+  margin: auto;
+  padding-top: 223px;
+  font-family: "Montserrat";
+  font-style: normal;
+  text-align: center;
+}
+
+.header .header__bg .header__conteiner .header__heading h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+}
+
+.header .header__bg .header__conteiner .header__heading p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+}
+
+.header .header__bg .header__conteiner .header__dots {
+  position: absolute;
+  top: 295px;
+  right: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header .header__bg .header__conteiner .header__dots input[type=radio] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.header .header__bg .header__conteiner .header__dots input[type=radio]:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 15px;
+  top: 0;
+  position: relative;
+  background-color: transparent;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+.header .header__bg .header__conteiner .header__dots input[type=radio]:checked:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 15px;
+  top: 0;
+  position: relative;
+  background-color: #FFFFFF;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.header .header__bg .header__conteiner .header__scroll {
+  padding-bottom: 50px;
+  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.header .header__bg .header__conteiner .header__scroll .header__scroll-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+}
+
+.about .about__conteiner {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.about .about__conteiner .about__title {
+  text-align: center;
+}
+
+.about .about__conteiner .about__title svg {
+  margin: 100px 0 30px 0;
+}
+
+.about .about__conteiner .about__title h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+}
+
+.about .about__conteiner .about__items {
+  padding: 90px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 177px;
+}
+
+.about .about__conteiner .about__items .about__item {
+  display: flex;
+  gap: 330px;
+}
+
+.about .about__conteiner .about__items .about__item .item-img1 {
+  position: relative;
+}
+
+.about .about__conteiner .about__items .about__item .item-img1 div {
+  width: 585px;
+  height: 470px;
+  background: #55B7FF;
+}
+
+.about .about__conteiner .about__items .about__item .item-img1 img {
+  position: absolute;
+  top: 57px;
+  left: 215px;
+}
+
+.about .about__conteiner .about__items .about__item .item-img2 {
+  position: relative;
+}
+
+.about .about__conteiner .about__items .about__item .item-img2 div {
+  width: 585px;
+  height: 470px;
+  background: #7E5AFF;
+}
+
+.about .about__conteiner .about__items .about__item .item-img2 img {
+  position: absolute;
+  top: 57px;
+  right: 215px;
+}
+
+.about .about__conteiner .about__items .about__item .item-content {
+  max-width: 476px;
+  width: 100%;
+  padding-top: 151px;
+}
+
+.about .about__conteiner .about__items .about__item .item-content .content-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+}
+
+.about .about__conteiner .about__items .about__item .item-content h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+}
+
+.about .about__conteiner .about__items .about__item .item-content .content-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  padding-top: 19px;
+}
+
+.about .about__conteiner .about__items .about__item .item-content button {
+  width: 190px;
+  height: 50px;
+  border: 1px solid #2C4058;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background: none;
+  margin-top: 40px;
+}
+
+.about .about__conteiner .about__items .about__item .item-content a {
+  display: block;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 60px;
+}
