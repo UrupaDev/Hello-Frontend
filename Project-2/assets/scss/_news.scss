@@ -1,0 +1,104 @@
+.news {
+
+  .news__bg {
+    background: url(../../src/img/bg_news.webp);
+    background-size: cover;
+
+    .news__conteiner {
+      max-width: 1600px;
+      width: 100%;
+      margin: auto;
+
+      .news__title {
+        text-align: center;
+
+        svg {
+          margin: 120px 0 30px 0;
+        }
+
+        h2 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 44px;
+          line-height: 54px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+
+      .news__items {
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+        padding: 90px 0 170px 0;
+
+        .news__item {
+
+          .news__img {
+            width: 100%;
+          }
+
+          .news_content {
+            background: #FFFFFF;
+            padding: 30px 20px;
+
+            h3 {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 27px;
+              color: #2C4058;
+            }
+
+            .content-text {
+              font-family: 'Open Sans';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #2C4058;
+              padding: 15px 0 46px 0;
+            }
+
+            .news__author {
+              display: flex;
+
+              img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+              }
+
+              .author_name_date {
+                padding-left: 20px;
+
+                .author_name {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #2C4058;
+                }
+
+                .author_date {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 17px;
+                  color: #55B7FF;
+                  padding-top: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
