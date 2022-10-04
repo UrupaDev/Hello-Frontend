@@ -1,11 +1,12 @@
 .news {
+  position: relative;
 
   .news__bg {
     background: url(../../src/img/bg_news.webp);
     background-size: cover;
 
     .news__conteiner {
-      max-width: 1600px;
+      max-width: 1400px;
       width: 100%;
       margin: auto;
 
@@ -27,74 +28,78 @@
         }
       }
 
-      .news__wrapper {
-        max-width: 1170px;
-        width: 100%;
-        margin: auto;
+      .news__wrapper-main {
+        display: flex;
+        align-items: center;
 
-        .news__items {
-          display: flex;
-          gap: 30px;
-          padding: 90px 15px 170px 15px;
-
-          .news__item {
-
-            .news__img img{
-              // width: 100%;
-            }
+        .news__wrapper {
+          max-width: 1200px;
+          width: 100%;
+          margin: auto;
   
-            .news_content {
-              background: #FFFFFF;
-              padding: 30px 20px;
+          .news__items {
+            padding: 90px 15px 170px 15px;
   
-              h3 {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 27px;
-                color: #2C4058;
+            .news__item {
+  
+              .news__img img{
+  
               }
-  
-              .content-text {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                color: #2C4058;
-                padding: 15px 0 46px 0;
-              }
-  
-              .news__author {
-                display: flex;
-  
-                img {
-                  width: 60px;
-                  height: 60px;
-                  border-radius: 50%;
+    
+              .news_content {
+                background: #FFFFFF;
+                padding: 30px 20px;
+                width: 370px;
+    
+                h3 {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 27px;
+                  color: #2C4058;
                 }
-  
-                .author_name_date {
-                  padding-left: 20px;
-  
-                  .author_name {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 22px;
-                    color: #2C4058;
+    
+                .content-text {
+                  font-family: 'Open Sans';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 25px;
+                  color: #2C4058;
+                  padding: 15px 0 46px 0;
+                }
+    
+                .news__author {
+                  display: flex;
+    
+                  img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
                   }
-  
-                  .author_date {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #55B7FF;
-                    padding-top: 6px;
+    
+                  .author_name_date {
+                    padding-left: 20px;
+    
+                    .author_name {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 18px;
+                      line-height: 22px;
+                      color: #2C4058;
+                    }
+    
+                    .author_date {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 17px;
+                      color: #55B7FF;
+                      padding-top: 6px;
+                    }
                   }
                 }
               }

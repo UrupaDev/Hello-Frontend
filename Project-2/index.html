@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="m_favicon.ico">
     <link rel="stylesheet" href="libraries/fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="libraries/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
     <script src="libraries/fancybox.min.js"></script>
-    <script src="libraries/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Monticello</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         <div class="header__conteiner">
           <div class="header__nav" id="header__nav">
             <div class="header__nav-items">
-              <div class="header__logo">
+              <div class="header__logo" id="header__logo">
                 <a href="#home"><img src="src/img/Logo.svg" alt="logo"></a> 
               </div>
               <div class="header__menu" id="header__menu">
@@ -131,61 +132,70 @@
               </svg>
               <h2>LATEST NEWS</h2>
             </div>
-            <div class="news__wrapper">
-              <div class="news__items">
-                <div class="news__item">
-                  <div class="news__img">
-                    <img src="src/img/news_img1.webp" alt="building">
-                  </div>
-                  <div class="news_content">
-                    <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
-                    <p class="content-text">Free directories: directories are perfect for customers that are searching for...</p>
-                    <div class="news__author">
-                      <img src="src/img/user_photo1.webp" alt="photo">
-                      <div class="author_name_date">
-                        <p class="author_name">ALJA BRUN</p>
-                        <p class="author_date">20 Jan 2020</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news__item swiper-slide">
-                  <div class="news__img">
-                    <img src="src/img/news_img2.webp" alt="building">
-                  </div>
-                  <div class="news_content">
-                    <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
-                    <p class="content-text">Having a home based business is a wonderful asset to your life...</p>
-                    <div class="news__author">
-                      <img src="src/img/user_photo2.webp" alt="photo">
-                      <div class="author_name_date">
-                        <p class="author_name">DOMINIC FREEMAN</p>
-                        <p class="author_date">13 Dec 2019</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news__item swiper-slide">
-                  <div class="news__img">
-                    <img src="src/img/news_img3.webp" alt="building">
-                  </div>
-                  <div class="news_content">
-                    <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-                    <p class="content-text">There are many things that are important to catalog design...</p>
-                    <div class="news__author">
-                      <img src="src/img/user_photo3.webp" alt="photo">
-                      <div class="author_name_date">
-                        <p class="author_name">ALICE WARD</p>
-                        <p class="author_date">30 Nov 2019</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="news__wrapper-main">
+              <div class="swiper-prev">
+                <svg width="6" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.898 1.25a.254.254 0 00-.078-.18L4.43.68a.27.27 0 00-.18-.078.27.27 0 00-.18.078L.43 4.32a.27.27 0 00-.078.18.27.27 0 00.078.18l3.64 3.64a.27.27 0 00.18.078.27.27 0 00.18-.078l.39-.39a.27.27 0 00.078-.18.27.27 0 00-.078-.18L1.75 4.5l3.07-3.07a.27.27 0 00.078-.18z" fill="#fff"/>
+                </svg>
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-scrollbar"></div>
+              <div class="news__wrapper swiper">
+                <div class="news__items swiper-wrapper">
+                  <div class="news__item swiper-slide">
+                    <div class="news__img">
+                      <img src="src/img/news_img1.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                      <p class="content-text">Free directories: directories are perfect for customers that are searching for...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo1.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">ALJA BRUN</p>
+                          <p class="author_date">20 Jan 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__item swiper-slide">
+                    <div class="news__img">
+                      <img src="src/img/news_img2.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                      <p class="content-text">Having a home based business is a wonderful asset to your life...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo2.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">DOMINIC FREEMAN</p>
+                          <p class="author_date">13 Dec 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__item swiper-slide">
+                    <div class="news__img">
+                      <img src="src/img/news_img3.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                      <p class="content-text">There are many things that are important to catalog design...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo3.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">ALICE WARD</p>
+                          <p class="author_date">30 Nov 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-next">
+                <svg width="6" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.648 4.5a.27.27 0 00-.078-.18L.93.68A.27.27 0 00.75.602.27.27 0 00.57.68l-.39.39a.27.27 0 00-.078.18.27.27 0 00.078.18L3.25 4.5.18 7.57a.27.27 0 00-.078.18c0 .07.03.133.078.18l.39.39a.27.27 0 00.18.078.27.27 0 00.18-.078l3.64-3.64a.27.27 0 00.078-.18z" fill="#fff"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

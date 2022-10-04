@@ -78,7 +78,7 @@
                   content: '';
                   display: inline-block;
                   visibility: visible;
-              }
+                }
               }
             }
           }
@@ -89,6 +89,17 @@
         position: fixed;
         left: 50%;
         transform: translate(-50%, -50%);
+        top: 15px;
+        background: #7E5AFF;
+        max-width: none;
+        padding: 15px 0;
+        z-index: 2;
+
+        .header__nav-items {
+          max-width: 1170px;
+          width: 100%;
+          margin: auto;
+        }
       }
 
       .header__heading {

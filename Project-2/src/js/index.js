@@ -6,11 +6,32 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 30,
+});
+
+
 // fixed manu on scroll
 window.onscroll = function() {myFunction()};
   
-  var header = document.getElementById("header__menu");
-  var sticky = header.offsetTop;
+  let header = document.getElementById("header__nav");
+  let sticky = header.offsetTop;
       
   function myFunction() {
     if (window.pageYOffset > sticky) {

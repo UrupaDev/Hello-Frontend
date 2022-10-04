@@ -153,6 +153,17 @@
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
+  top: 15px;
+  background: #7E5AFF;
+  max-width: none;
+  padding: 15px 0;
+  z-index: 2;
+}
+
+.header .header__bg .header__conteiner .sticky_header .header__nav-items {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
 }
 
 .header .header__bg .header__conteiner .header__heading {
@@ -361,13 +372,17 @@
   padding-top: 60px;
 }
 
+.news {
+  position: relative;
+}
+
 .news .news__bg {
   background: url(../../src/img/bg_news.webp);
   background-size: cover;
 }
 
 .news .news__bg .news__conteiner {
-  max-width: 1600px;
+  max-width: 1400px;
   width: 100%;
   margin: auto;
 }
@@ -390,24 +405,28 @@
   color: #FFFFFF;
 }
 
-.news .news__bg .news__conteiner .news__wrapper {
-  max-width: 1170px;
+.news .news__bg .news__conteiner .news__wrapper-main {
+  display: flex;
+  align-items: center;
+}
+
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper {
+  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items {
-  display: flex;
-  gap: 30px;
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items {
   padding: 90px 15px 170px 15px;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content {
   background: #FFFFFF;
   padding: 30px 20px;
+  width: 370px;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content h3 {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -416,7 +435,7 @@
   color: #2C4058;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .content-text {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .content-text {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -426,21 +445,21 @@
   padding: 15px 0 46px 0;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .news__author {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .news__author {
   display: flex;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .news__author img {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .news__author img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .news__author .author_name_date {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .news__author .author_name_date {
   padding-left: 20px;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .news__author .author_name_date .author_name {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .news__author .author_name_date .author_name {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -449,7 +468,7 @@
   color: #2C4058;
 }
 
-.news .news__bg .news__conteiner .news__wrapper .news__items .news__item .news_content .news__author .author_name_date .author_date {
+.news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items .news__item .news_content .news__author .author_name_date .author_date {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -675,6 +694,37 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 120px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FFFFFF;
+  background-color: var(--swiper-pagination-bullet-inactive-background-color, #fff);
+}
+
+.swiper-next,
+.swiper-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
 }
 
 @media (max-width: 1200px) {
