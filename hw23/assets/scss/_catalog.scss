@@ -1,0 +1,95 @@
+.catalog {
+
+  .catalog__conteiner {
+    max-width: 1340px;
+    width: 100%;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      padding: 70px 0 50px 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .catalog__wrapper {
+      display: flex;
+      align-items: center;
+
+      .swiper-prev {
+        padding-right: 23px;
+        font-size: 67px;
+      }
+
+      .swiper-next {
+        padding-left: 23px;
+        font-size: 67px;
+      }
+
+      .catalog__list {
+
+        .catalog__items {
+          text-align: center;
+          margin-bottom: 50px;
+
+          .catalog__item {
+            border: 1px solid #F8F1EA;
+
+            img {
+              padding-top: 20px;
+            }
+            
+            p {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: center;
+              color: #000000;
+              padding-top: 18px;
+            }
+
+            span {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;
+              color: #000000;
+              padding-bottom: 20px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .catalog__button {
+      text-align: center;
+      margin-bottom: 70px;
+
+      button {
+        width: 227px;
+        height: 50px;
+        border: 2px solid #000000;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        background: none;
+      }
+    }
+  }
+}

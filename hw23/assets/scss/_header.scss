@@ -1,0 +1,43 @@
+.header {
+  background: #F8F1EA;
+
+  .header__conteiner {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+
+    .header__items {
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .header__menu {
+        max-width: 410px;
+        width: 100%;
+        
+        .header__menu-items {
+          display: flex;
+          justify-content: space-between;
+
+          .header__menu-item {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            a {
+              color: #000000;
+            }
+          }
+        }
+      }
+
+      .header__tools {
+        gap: 34px;
+        display: flex;
+      }
+    } 
+  }
+}

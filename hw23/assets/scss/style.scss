@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../src/fonts/Montserrat-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../src/fonts/Montserrat-SemiBold.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../src/fonts/Montserrat-Bold.woff2);
+  font-weight: 700;
+}
+
+@import "_general", "_header", "_home", "_bg-slider", "_catalog", "_partners", "_footer";

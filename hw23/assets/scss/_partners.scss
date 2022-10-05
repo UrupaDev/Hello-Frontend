@@ -1,0 +1,49 @@
+.partners {
+  background: #F8F1EA;
+
+  .partners__conteiner {
+    max-width: 1186px;
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      padding: 70px 0 42px 0;
+    }
+
+    .partners__items {
+      display: flex;
+      align-items: center;
+      padding-bottom: 72px;
+
+      .partners__item {
+        width: 114px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+      }
+
+      .customPrevBtn {
+        padding-right: 34px;
+        font-size: 67px;
+      }
+
+      .customNextBtn {
+        padding-left: 34px;
+        font-size: 67px;
+      }
+    }
+  }
+}
+
+.owl-carousel .owl-item img {
+  width: 90%;
+}
