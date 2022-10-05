@@ -1,3 +1,4 @@
+// fancy gallery
 Fancybox.bind('[data-fancybox="gallery"]', {
   caption: function (fancybox, carousel, slide) {
     return (
@@ -6,22 +7,17 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 
+//swiper for news
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
   },
-
   slidesPerView: 3,
   spaceBetween: 30,
 });

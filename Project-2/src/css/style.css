@@ -278,7 +278,6 @@
 
 .about .about__conteiner .about__items .about__item {
   display: flex;
-  gap: 330px;
   justify-content: space-between;
 }
 
@@ -318,6 +317,8 @@
   max-width: 476px;
   width: 100%;
   padding-top: 151px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .about .about__conteiner .about__items .about__item .item-content .content-subtitle {
