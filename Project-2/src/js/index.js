@@ -36,3 +36,20 @@ window.onscroll = function() {myFunction()};
       header.classList.remove("sticky_header");
     }
   }
+
+// Slicarousel for bg 
+$(document).ready(function(){
+  $(".the_slider").slicarousel({
+     nbr_slides: 5,
+     arrows: false,
+     speed: 'slow',
+     dot_nav: false,
+  });
+});
+
+// $(".the_slider").slicarousel({
+//   "autoplay": {
+//               "enabled": true,
+//               "direction": "ltr" 
+//           },
+// });

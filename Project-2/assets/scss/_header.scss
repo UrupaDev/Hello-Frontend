@@ -1,40 +1,106 @@
 .header {
   background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
-
-  .header__bg {
-    background: url(../../src/img/bg_home.webp);
+  position: relative;
+  
+  .container{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 700px;
+    position: relative;
+  }
+  
+  .the_slider{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .the_slider .s_slide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  
+  .the_slider .s_slider_container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .the_slider .s_slider_container:active{
+    cursor: -webkit-grabbing
+  }
+  
+  .the_slider .s_slide_0{
+    background-image: url('../../src/img/bg_home1.webp');
     background-size: cover;
+  }
+  
+  .the_slider .s_slide_1{
+    background-image: url('../../src/img/bg_home2.webp');
+    opacity: 0.5;
+    background-size: cover;
+  }
+
+  .the_slider .s_slide_2{
+    background-image: url('../../src/img/bg_home3.webp');
+    opacity: 0.5;
+    background-size: cover;
+  }
+
+  .the_slider .s_slide_3{
+    background-image: url('../../src/img/bg_home4.webp');
+    opacity: 0.5;
+    background-size: cover;
+  }
+
+  .the_slider .s_slide_4{
+    background-image: url('../../src/img/bg_home5.webp');
+    opacity: 0.5;
+    background-size: cover;
+  }
+
+  .header__main-conteiner {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
 
     .header__conteiner {
       max-width: 1600px;
       width: 100%;
-      margin: auto;
       color: #FFFFFF;
-      position: relative;
-
+      position: absolute;
+      top: 0;
+  
       .header__nav {
         max-width: 1170px;
         width: 100%;
         margin: auto;
-
+  
         .header__nav-items {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 53px 15px 0 15px;
-
+  
           .header__menu {
             max-width: 515px;
             width: 100%;
             margin: auto;
-
+  
             .header__menu-items {
               display: flex;
               justify-content: space-between;
-
+  
               .header__menu-item {
                 display: flex;
-
+  
                 .header__menu-label {
                   font-family: 'Source Sans Pro';
                   font-style: normal;
@@ -43,7 +109,7 @@
                   line-height: 18px;
                   padding-left: 14px;
                   cursor: pointer;
-
+  
                   a {
                     color: #FFFFFF;
                   }
@@ -84,7 +150,7 @@
           }
         }
       }
-
+  
       .sticky_header {
         position: fixed;
         left: 50%;
@@ -94,14 +160,14 @@
         max-width: none;
         padding: 15px 0;
         z-index: 2;
-
+  
         .header__nav-items {
           max-width: 1170px;
           width: 100%;
           margin: auto;
         }
       }
-
+  
       .header__heading {
         max-width: 925px;
         width: 100%;
@@ -110,14 +176,14 @@
         font-family: 'Montserrat';
         font-style: normal;
         text-align: center;
-
+  
         h1 {
           font-weight: 700;
           font-size: 80px;
           line-height: 98px;
           letter-spacing: 0.1em;
         }
-
+  
         p {
           font-weight: 400;
           font-size: 18px;
@@ -125,7 +191,7 @@
           letter-spacing: 0.3em;
         }
       }
-
+  
       .header__dots {
         position: absolute;
         top: 295px;
@@ -133,13 +199,13 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-
+  
         input[type="radio"]{
           visibility: hidden;
           height: 0;
           width: 0;
         }
-
+  
         input[type='radio']:after {
           width: 8px;
           height: 8px;
@@ -165,13 +231,13 @@
           visibility: visible;
         }
       }
-
+  
       .header__scroll {
         padding-bottom: 50px;
         margin-top: 240px;
         display: flex;
         justify-content: center;
-
+  
         .header__scroll-circle {
           width: 40px;
           height: 40px;

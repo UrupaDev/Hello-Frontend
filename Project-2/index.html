@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="m_favicon.ico">
+    <link rel="stylesheet" href="libraries/slicarousel.css">
     <link rel="stylesheet" href="libraries/fancybox.min.css">
     <link rel="stylesheet" href="libraries/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="libraries/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="libraries/jquery-3.6.1.min.js"></script>
+    <script src="libraries/slicarousel.js"></script>
     <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
     <script src="libraries/fancybox.min.js"></script>
     <script src="libraries/swiper-bundle.min.js"></script>
@@ -15,59 +18,63 @@
   </head>
   <body>
     <header class="header" id="home">
-      <div class="header__bg">
-        <div class="header__conteiner">
-          <div class="header__nav" id="header__nav">
-            <div class="header__nav-items">
-              <div class="header__logo" id="header__logo">
-                <a href="#home"><img src="src/img/Logo.svg" alt="logo"></a> 
-              </div>
-              <div class="header__menu" id="header__menu">
-                <div class="header__menu-items">
-                  <div class="header__menu-item">
-                    <input type="radio" name="menu-item" id="menu-item1" onclick="window.location.href='#about'" checked>
-                    <label class="header__menu-label" for="menu-item1">  ABOUT US</label>
-                  </div>
-                  <div class="header__menu-item">
-                    <input type="radio" name="menu-item" id="menu-item2" onclick="window.location.href='#news'">
-                    <label class="header__menu-label" for="menu-item2"> NEWS</label>
-                  </div>
-                  <div class="header__menu-item">
-                    <input type="radio" name="menu-item" id="menu-item3" onclick="window.location.href='#gallery'">
-                    <label class="header__menu-label" for="menu-item3">GALLERY</label>
-                  </div>
-                  <div class="header__menu-item">
-                    <input type="radio" name="menu-item" id="menu-item4" onclick="window.location.href='#contacts'">
-                    <label class="header__menu-label" for="menu-item4">CONTACT</label>
+      <div class="home__bg container">
+        <div class="the_slider"></div>
+      </div>
+        <div class="header__main-conteiner">
+          <div class="header__conteiner">
+            <div class="header__nav" id="header__nav">
+              <div class="header__nav-items">
+                <div class="header__logo" id="header__logo">
+                  <a href="#home"><img src="src/img/Logo.svg" alt="logo"></a> 
+                </div>
+                <div class="header__menu" id="header__menu">
+                  <div class="header__menu-items">
+                    <div class="header__menu-item">
+                      <input type="radio" name="menu-item" id="menu-item1" onclick="window.location.href='#about'" checked>
+                      <label class="header__menu-label" for="menu-item1">  ABOUT US</label>
+                    </div>
+                    <div class="header__menu-item">
+                      <input type="radio" name="menu-item" id="menu-item2" onclick="window.location.href='#news'">
+                      <label class="header__menu-label" for="menu-item2"> NEWS</label>
+                    </div>
+                    <div class="header__menu-item">
+                      <input type="radio" name="menu-item" id="menu-item3" onclick="window.location.href='#gallery'">
+                      <label class="header__menu-label" for="menu-item3">GALLERY</label>
+                    </div>
+                    <div class="header__menu-item">
+                      <input type="radio" name="menu-item" id="menu-item4" onclick="window.location.href='#contacts'">
+                      <label class="header__menu-label" for="menu-item4">CONTACT</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="social">
-                <a href="https://www.facebook.com/" target="_blank" class="social-item">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank" class="social-item">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" class="social-item">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
+                <div class="social">
+                  <a href="https://www.facebook.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="header__heading">
-            <h1>SIMPLE & MODERN</h1>
-            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-          </div>
-          <div class="header__scroll">
-            <button class="header__scroll-circle">
-              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
-              </svg>                
-            </button>
+            <div class="header__heading">
+              <h1>SIMPLE & MODERN</h1>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="header__scroll">
+              <button class="header__scroll-circle">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
+                </svg>                
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      
     </header>
     <main>
       <section class="about" id="about">
