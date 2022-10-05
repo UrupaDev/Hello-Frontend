@@ -279,6 +279,7 @@
 .about .about__conteiner .about__items .about__item {
   display: flex;
   gap: 330px;
+  justify-content: space-between;
 }
 
 .about .about__conteiner .about__items .about__item .item-img1 {
