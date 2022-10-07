@@ -100,3 +100,27 @@
 .sl-slide-vertical .sl-slide-inner {
 	background: #ccc;
 }
+
+.dot_nav {
+	gap: 40px;
+	display: flex;
+	flex-direction: column;
+	height: 210px;
+	position: absolute;
+	top: 25%;
+	right: 52px;
+	transform: translate(50%, 50%);
+	text-align: center;
+}
+
+.dot {
+	height: 10px;
+	width: 10px;
+	border: 1px solid #FFFFFF;
+	background: none;
+}
+
+.dot.active{
+	background: #FFFFFF;
+	border: none;
+}

@@ -10,7 +10,7 @@
             "full_width": true, // width: 100%
             "autoplay": {
                 "enabled": true, // Enable autoplay slider
-                "direction": "ltr" // direction right to left rtl or left to right ltr
+                "direction": "rtl" // direction right to left rtl or left to right ltr
             },
             "delay": 2500, // The sliding delay in milliseconds
             "speed": 500 // The sliding speed can be slow, normal, fast or customized in milliseconds
@@ -209,7 +209,7 @@
         // Adding the dots navigation 
         if (params.dot_nav) {
             this.append("<div class='dot_nav'></div>")
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < 5; i++) {
                 if (i == 0)
                     $(".dot_nav").append("<span class='dot dot-" + i + " active' slide-nbr='" + i + "'></span>")
                 else

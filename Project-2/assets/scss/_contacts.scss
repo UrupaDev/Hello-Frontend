@@ -50,6 +50,10 @@
           justify-content: space-between;
 
           .contacts__tab-item {
+
+            .type-contacts {
+              display: inline;
+            }
             
             span, a {
               font-family: 'Montserrat';
@@ -59,7 +63,8 @@
               line-height: 27px;
               color: #000000;
             }
-            span i {
+
+            i {
               color: #7E5AFF;
               padding-right: 5px;
             }

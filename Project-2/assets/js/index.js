@@ -20,6 +20,23 @@ const swiper = new Swiper('.swiper', {
   },
   slidesPerView: 3,
   spaceBetween: 30,
+
+  breakpoints: {
+    // when window width is >= 320px
+    500: {
+      slidesPerView: 1,
+
+    },
+    // when window width is >= 480px
+    900: {
+      slidesPerView: 2,
+
+    },
+    1100: {
+      slidesPerView: 2,
+
+    },
+  }
 });
 
 
@@ -43,13 +60,24 @@ $(document).ready(function(){
      nbr_slides: 5,
      arrows: false,
      speed: 'slow',
-     dot_nav: false,
+     dot_nav: true,
   });
 });
 
-// $(".the_slider").slicarousel({
-//   "autoplay": {
-//               "enabled": true,
-//               "direction": "ltr" 
-//           },
-// });
+//burger menu
+let btn = $('.buger-menu-btn');
+let headerMenu = $('.header__menu');
+let menuItems = $('.header__menu-item')
+
+btn.on('click', function() {
+  $(btn).toggleClass('active');
+  $(headerMenu).toggleClass('menu-active');
+});
+
+menuItems.on('click', function() {
+  $(menuItems).removeClass('active');
+  $(btn).removeClass('active');
+  $(headerMenu).removeClass('menu-active');
+});
+
+

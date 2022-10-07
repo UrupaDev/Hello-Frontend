@@ -13,7 +13,7 @@
     <script src="libraries/slicarousel.js"></script>
     <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
     <script src="libraries/fancybox.min.js"></script>
-    <script src="libraries/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Monticello</title>
   </head>
   <body>
@@ -47,6 +47,13 @@
                       <label class="header__menu-label" for="menu-item4">CONTACT</label>
                     </div>
                   </div>
+                  <div class="buger-menu">
+                    <div class="buger-menu-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>                  
                 </div>
                 <div class="social">
                   <a href="https://www.facebook.com/" target="_blank" class="social-item">
@@ -66,7 +73,7 @@
               <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
             </div>
             <div class="header__scroll">
-              <button class="header__scroll-circle">
+              <button class="header__scroll-circle" onclick="window.location.href='#about'" style="transition: 0.8s ease-in-out">
                 <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
                 </svg>                
@@ -98,8 +105,7 @@
                   The truth is, our thoughts are very powerful.</p>
                 <button>MORE DETAILS</button>
                 <a href="/#">
-                  <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                  <span>New York City, United States - 1776 feet </span>
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>New York City, United States - 1776 feet
                 </a>
               </div>
             </div>
@@ -111,8 +117,7 @@
                   and how a digital advertising network may help.</p>
                 <button>MORE DETAILS</button>
                 <a href="/#">
-                  <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                  <span>Hong Kong - 1588 feet</span>
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>Hong Kong - 1588 feet
                 </a>
               </div>
               <div class="item-img2 news-grid4">
@@ -230,26 +235,25 @@
             </div>
             <div class="contacts__tab-content">
               <div class="contacts__tab-text">
-                <a class="contacts__tab-item" href="/#">
-                  <span><i class="fa-sharp fa-solid fa-location-dot"></i>
-                  <span> 91 Nolan Extensions Suite 670 </span>
-                </a>
-                <p class="contacts__tab-item">
-                  <span><i class="fa-sharp fa-solid fa-phone"></i></span>
-                  <span class="type-contacts"></span>
+                <div class="contacts__tab-item" href="/#">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                   91 Nolan Extensions Suite 670 
+                </div>
+                <div class="contacts__tab-item">
+                  <i class="fa-sharp fa-solid fa-phone"></i>
+                <div class="type-contacts">
                   <a href="tel:+001 356-868-2454" class="link-cont">+001 356-868-2454</a>
-                </p>
-                <p class="contacts__tab-item"> 
-                  <span><i class="fa-solid fa-inbox"></i></span>
-                  <span class="type-contacts"></span>
-                  <a href="mailto:montichello@service.com" class="link-cont">montichello@service.com
-                    <i class="fa-regular fa-clock-nine"></i>
-                  </a>
-                </p>
-                <p class="contacts__tab-item">
-                  <span><i class="fa-solid fa-calendar-days"></i></span>
-                  <span>From 07:05AM to 19:30PM</span>
-                </p>
+                </div> 
+                </div>
+                <div class="contacts__tab-item"> 
+                  <i class="fa-solid fa-inbox"></i>
+                  <div class="type-contacts"></div>
+                  <a href="mailto:montichello@service.com" class="link-cont">montichello@service.com</a>
+                </div>
+                <div class="contacts__tab-item">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  From 07:05AM to 19:30PM
+                </div>
               </div>
               <div class="contacts__tab-form">
                 <form action="/#" method="get">
