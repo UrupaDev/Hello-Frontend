@@ -68,7 +68,7 @@
                 </div>
               </div>
             </div>
-            <div class="header__heading">
+            <div class="header__heading" id="header__heading">
               <h1>SIMPLE & MODERN</h1>
               <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
             </div>
@@ -213,11 +213,11 @@
           <h2>GALLERY</h2>
         </div>
         <div class="gallery__items">
-          <img class="gallery__item1" src="src/img/gallery_img1.webp" alt="building" data-fancybox="gallery">
-          <img class="gallery__item2" src="src/img/gallery_img2.webp" alt="building" data-fancybox="gallery">
-          <img class="gallery__item3" src="src/img/gallery_img3.webp" alt="building" data-fancybox="gallery">
-          <img class="gallery__item4" src="src/img/gallery_img4.webp" alt="building" data-fancybox="gallery">
-          <img class="gallery__item5" src="src/img/gallery_img5.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item1" src="src/img/gallery_img1.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item2" src="src/img/gallery_img2.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item3" src="src/img/gallery_img3.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item4" src="src/img/gallery_img4.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item5" src="src/img/gallery_img5.webp" alt="building" data-fancybox="gallery">
         </div>
         <div class="gallery__button">
           <button>SEE MORE</button>
@@ -225,8 +225,8 @@
       </section>
       <section class="contacts" id="contacts">
         <div class="contacts__conteiner">
-          <div class="contacts__map"></div>
-          <div class="contacts__tab">
+          <div class="contacts__map" id="map"></div>  <!-- google map -->
+          <div class="contacts__tab"> 
             <div class="contacts__tab-title">
               <svg height="2" width="100" class="line">
                 <line x1="0" y1="0" x2="100" y2="0" style="stroke:#2C4058;stroke-width:1" />
@@ -237,7 +237,7 @@
               <div class="contacts__tab-text">
                 <div class="contacts__tab-item" href="/#">
                   <i class="fa-sharp fa-solid fa-location-dot"></i>
-                   91 Nolan Extensions Suite 670 
+                  <p>91 Nolan Extensions Suite 670</p>  
                 </div>
                 <div class="contacts__tab-item">
                   <i class="fa-sharp fa-solid fa-phone"></i>
@@ -252,17 +252,24 @@
                 </div>
                 <div class="contacts__tab-item">
                   <i class="fa-solid fa-calendar-days"></i>
-                  From 07:05AM to 19:30PM
+                  <p>From 07:05AM to 19:30PM</p> 
                 </div>
               </div>
               <div class="contacts__tab-form">
                 <form action="/#" method="get">
-                  <input class="input-style" type="text" id="name" name="name" placeholder="Mollie Medina"
-                    minlength="1" maxlength="25" required>
-                  <input class="input-style contacts__tab-email" type="email" id="email" name="email" placeholder="Email" 
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64" required>
+                  <div class="form-item">
+                    <input class="input-style" type="text" id="name" name="name" placeholder="Mollie Medina"
+                      minlength="1" maxlength="25" required>
+                    <div class="input-line"></div>
+                  </div>
+                  <div class="form-item">
+                    <input class="input-style contacts__tab-email" type="email" id="email" name="email" placeholder="Email" 
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64" required>
+                    <div class="input-line"></div>
+                  </div>
                   <div class="contacts__form-button">
-                    <button type="submit" id="submit">SUBMIT</button>
+                    <button type="submit" id="submit">
+                     <span>SUBMIT</span> </button>
                   </div>
                 </form>
               </div>
@@ -275,7 +282,9 @@
       <div class="footer__bg">
         <div class="footer__conteiner">
           <div class="footer__main">
-            <img src="src/img/Logo.svg" alt="logo">
+            <a href="#home">
+              <img src="src/img/Logo.svg" alt="logo">
+            </a>
             <div class="social">
               <a href="https://www.facebook.com/" target="_blank" class="social-item">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -294,5 +303,9 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdLJFhb9Kid_AtRLClhj_Ob6ZUAM4_uzc&callback=initMap&v=weekly"
+      defer
+    ></script>
     <script src="src/js/index.js"></script>
   </body>

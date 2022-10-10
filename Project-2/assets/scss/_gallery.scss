@@ -31,6 +31,11 @@
     gap: 10px;
     padding-top: 90px;
 
+    .gallery__item  {
+      width: 100%;
+      cursor: url(../../src/img/Group.webp), pointer;
+    }
+
     .gallery__item1 {
       grid-area: img1;
     }
@@ -68,6 +73,12 @@
       text-align: center;
       color: #000000;
       background: none;
+      transition: 0.1s ease-in;
+
+      &:hover, &:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em #2C4058;
+        transform: translateY(-0.25em);
+      }
     }
   }
 }
@@ -75,4 +86,32 @@
 .fancybox__image {
   width: 580px;
   height: 438px;
+}
+
+@media (max-width: 768px) {
+
+  .gallery .gallery__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+      "img1 img1"
+      "img2 img3"
+      "img4 img5";
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .gallery .gallery__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+    padding: 0 15px;
+  }
 }

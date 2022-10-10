@@ -30,3 +30,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding-top: 90px;
+
+    .footer__bg .footer__conteiner {
+      padding: 203px 15px 234px 15px;
+    }
+  }
+}

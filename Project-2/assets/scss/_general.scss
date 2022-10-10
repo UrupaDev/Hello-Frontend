@@ -1,5 +1,5 @@
 html{
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
 }
 
 * {
@@ -27,6 +27,11 @@ html{
     i {
       top: 5px;
       left: 5px;
+    }
+
+    &:hover {
+      background: #55B7FF;
+      border: 1px solid #55B7FF;
     }
   }
 }
