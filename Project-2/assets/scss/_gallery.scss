@@ -99,9 +99,24 @@
       "img4 img5";
     padding: 0 15px;
   }
+
+  .gallery .gallery__button button {
+    margin: 50px 0 70px 0;
+  }
+
+  .gallery .gallery__title {
+
+    svg {
+      margin: 70px 0 50px 0; 
+    }
+
+    h2 {
+      padding-bottom: 50px;
+    }
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
 
   .gallery .gallery__items {
     grid-template-columns: 1fr;

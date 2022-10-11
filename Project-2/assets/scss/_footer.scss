@@ -37,7 +37,27 @@
     padding-top: 90px;
 
     .footer__bg .footer__conteiner {
-      padding: 203px 15px 234px 15px;
+      padding: 203px 15px 100px 15px;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .footer .footer__bg .footer__conteiner {
+
+    .footer__main {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+  
+      .social {
+        padding: 20px 0 0 20px;
+      }
+    }
+  
+    .footer__bottom {
+      text-align: center;
+      padding-left: 20px;
     }
   }
 }

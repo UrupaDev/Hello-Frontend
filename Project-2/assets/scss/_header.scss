@@ -483,5 +483,31 @@
       transform: scale(1);
     }
   }
+}
+
+@media (max-width: 510px) {
+  .header .header__main-conteiner .header__conteiner {
+
+    .header__heading {
+      padding-top: 100px;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
   
+    .heading_when_scroll {
+      padding-top: 200px;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .menu-active .header__menu-items {
+    height: 182px;
+    width: 200px;
+    padding-left: 9px;
+    margin-top: 56px;
+    align-items: flex-start;
+  }
 }

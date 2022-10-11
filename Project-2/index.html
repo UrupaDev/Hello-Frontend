@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="m_favicon.ico">
+    <link rel="stylesheet" href="libraries/animate.min.css">
     <link rel="stylesheet" href="libraries/slicarousel.css">
     <link rel="stylesheet" href="libraries/fancybox.min.css">
     <link rel="stylesheet" href="libraries/swiper-bundle.min.css"/>
@@ -96,7 +97,7 @@
             <div class="about__item about__item1">
               <div class="item-img1 news-grid1">
                 <div></div>
-                <img src="src/img/about_img1.webp" alt="building">
+                <img class="wow animate__backInLeft" src="src/img/about_img1.webp" alt="building">
               </div>
               <div class="item-content news-grid2">
                 <p class="content-subtitle">ONE WORLD</p>
@@ -122,7 +123,7 @@
               </div>
               <div class="item-img2 news-grid4">
                 <div></div>
-                <img src="src/img/about_img2.webp" alt="">
+                <img class="wow animate__backInRight" src="src/img/about_img2.webp" alt="">
               </div>
             </div>
           </div>
@@ -145,7 +146,7 @@
               </div>
               <div class="news__wrapper swiper">
                 <div class="news__items swiper-wrapper">
-                  <div class="news__item swiper-slide">
+                  <div class="news__item swiper-slide wow animate__pulse">
                     <div class="news__img">
                       <img src="src/img/news_img1.webp" alt="building">
                     </div>
@@ -161,7 +162,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="news__item swiper-slide">
+                  <div class="news__item swiper-slide wow animate__pulse">
                     <div class="news__img">
                       <img src="src/img/news_img2.webp" alt="building">
                     </div>
@@ -177,7 +178,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="news__item swiper-slide">
+                  <div class="news__item swiper-slide wow animate__pulse">
                     <div class="news__img">
                       <img src="src/img/news_img3.webp" alt="building">
                     </div>
@@ -256,20 +257,20 @@
                 </div>
               </div>
               <div class="contacts__tab-form">
-                <form action="/#" method="get">
+                <form action="/#" method="get" name = "contactForm" onsubmit = "return(validate());">
                   <div class="form-item">
-                    <input class="input-style" type="text" id="name" name="name" placeholder="Mollie Medina"
-                      minlength="1" maxlength="25" required>
+                    <input class="input-style" type="text" id="name" name="name" placeholder="Mollie Medina">
                     <div class="input-line"></div>
+                    <div class="error"></div>
                   </div>
                   <div class="form-item">
-                    <input class="input-style contacts__tab-email" type="email" id="email" name="email" placeholder="Email" 
-                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64" required>
+                    <input class="input-style contacts__tab-email" type="email" id="email" name="email" placeholder="Email">
                     <div class="input-line"></div>
+                    <div class="error"></div>
                   </div>
                   <div class="contacts__form-button">
                     <button type="submit" id="submit">
-                     <span>SUBMIT</span> </button>
+                     <p>SUBMIT</p> </button>
                   </div>
                 </form>
               </div>
@@ -305,7 +306,7 @@
     </footer>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdLJFhb9Kid_AtRLClhj_Ob6ZUAM4_uzc&callback=initMap&v=weekly"
-      defer
-    ></script>
-    <script src="src/js/index.js"></script>
+      defer></script>
+    <script src="libraries/wow.min.js"></script>
+    <script src="src/js/index.min.js"></script>
   </body>
