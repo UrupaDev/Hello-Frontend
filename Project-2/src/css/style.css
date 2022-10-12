@@ -1192,6 +1192,11 @@ input:-webkit-autofill:active {
     display: none;
   }
 
+  .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .header__menu .buger-menu {
+    position: absolute;
+    top: 73px;
+  }
+
   .header__nav-items .social {
     display: none;
   }
@@ -1201,20 +1206,28 @@ input:-webkit-autofill:active {
     flex-direction: column;
     height: 170px;
     padding-right: 68px;
-    padding-top: 13px;
     align-items: flex-end;
+    padding-top: 20px;
+  }
+
+  .buger-menu {
+    position: absolute;
+    bottom: 26px;
+    right: 25px;
   }
 
   .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active {
     padding-top: 116px;
   }
 
-  .buger-menu {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 75px;
-    right: 30px;
+  .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active .buger-menu {
+    position: relative;
+    top: -142px;
+    left: 290px;
+  }
+
+  .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active .header__menu-items {
+    padding-top: 23px;
   }
 
   .buger-menu-btn {
@@ -1238,51 +1251,28 @@ input:-webkit-autofill:active {
   }
 
   .active span:nth-child(1) {
-    -webkit-animation: ease 0.7s top forwards;
-            animation: ease 0.7s top forwards;
+    animation: ease 0.7s top forwards;
   }
 
   .not-active span:nth-child(1) {
-    -webkit-animation: ease 0.7s top-2 forwards;
-            animation: ease 0.7s top-2 forwards;
+    animation: ease 0.7s top-2 forwards;
   }
 
   .active span:nth-child(2) {
-    -webkit-animation: ease 0.7s scaled forwards;
-            animation: ease 0.7s scaled forwards;
+    animation: ease 0.7s scaled forwards;
   }
 
   .not-active span:nth-child(2) {
-    -webkit-animation: ease 0.7s scaled-2 forwards;
-            animation: ease 0.7s scaled-2 forwards;
+    animation: ease 0.7s scaled-2 forwards;
   }
 
   .active span:nth-child(3) {
-    -webkit-animation: ease 0.7s bottom forwards;
-            animation: ease 0.7s bottom forwards;
+    animation: ease 0.7s bottom forwards;
   }
 
   .not-active span:nth-child(3) {
-    -webkit-animation: ease 0.7s bottom-2 forwards;
-            animation: ease 0.7s bottom-2 forwards;
+    animation: ease 0.7s bottom-2 forwards;
   }
-
-@-webkit-keyframes top {
-    0% {
-      top: 0;
-      transform: rotate(0);
-    }
-
-    50% {
-      top: 11px;
-      transform: rotate(0);
-    }
-
-    100% {
-      top: 9px;
-      transform: rotate(45deg);
-    }
-}
 
 @keyframes top {
     0% {
@@ -1298,23 +1288,6 @@ input:-webkit-autofill:active {
     100% {
       top: 9px;
       transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes top-2 {
-    0% {
-      top: 11px;
-      transform: rotate(45deg);
-    }
-
-    50% {
-      top: 11px;
-      transform: rotate(0deg);
-    }
-
-    100% {
-      top: 0;
-      transform: rotate(0deg);
     }
 }
 
@@ -1335,23 +1308,6 @@ input:-webkit-autofill:active {
     }
 }
 
-@-webkit-keyframes bottom {
-    0% {
-      bottom: 0;
-      transform: rotate(0);
-    }
-
-    50% {
-      bottom: 11px;
-      transform: rotate(0);
-    }
-
-    100% {
-      bottom: 11px;
-      transform: rotate(135deg);
-    }
-}
-
 @keyframes bottom {
     0% {
       bottom: 0;
@@ -1366,23 +1322,6 @@ input:-webkit-autofill:active {
     100% {
       bottom: 11px;
       transform: rotate(135deg);
-    }
-}
-
-@-webkit-keyframes bottom-2 {
-    0% {
-      bottom: 11px;
-      transform: rotate(135deg);
-    }
-
-    50% {
-      bottom: 11px;
-      transform: rotate(0);
-    }
-
-    100% {
-      bottom: 0;
-      transform: rotate(0);
     }
 }
 
@@ -1403,16 +1342,6 @@ input:-webkit-autofill:active {
     }
 }
 
-@-webkit-keyframes scaled {
-    50% {
-      transform: scale(0);
-    }
-
-    100% {
-      transform: scale(0);
-    }
-}
-
 @keyframes scaled {
     50% {
       transform: scale(0);
@@ -1420,20 +1349,6 @@ input:-webkit-autofill:active {
 
     100% {
       transform: scale(0);
-    }
-}
-
-@-webkit-keyframes scaled-2 {
-    0% {
-      transform: scale(0);
-    }
-
-    50% {
-      transform: scale(0);
-    }
-
-    100% {
-      transform: scale(1);
     }
 }
 
