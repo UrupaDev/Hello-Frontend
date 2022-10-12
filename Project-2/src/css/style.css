@@ -1194,7 +1194,7 @@ input:-webkit-autofill:active {
 
   .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .header__menu .buger-menu {
     position: absolute;
-    top: 73px;
+    top: 76px;
   }
 
   .header__nav-items .social {
@@ -1218,12 +1218,6 @@ input:-webkit-autofill:active {
 
   .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active {
     padding-top: 116px;
-  }
-
-  .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active .buger-menu {
-    position: relative;
-    top: -142px;
-    left: 290px;
   }
 
   .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active .header__menu-items {
@@ -1466,11 +1460,24 @@ input:-webkit-autofill:active {
 
 @media (max-width: 455px) {
   .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .menu-active .header__menu-items {
-    height: 182px;
-    width: 200px;
-    padding-left: 9px;
-    margin-top: 56px;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    padding-right: 15px;
+    align-items: flex-end;
+    padding-top: 55px;
+  }
+
+  .header__menu-items {
+    padding: 0;
+  }
+
+  .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .menu-active .header__menu-items {
+    padding-top: 23px;
+  }
+
+  .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .header__menu .buger-menu {
+    top: 63px;
   }
 
   .header .header__main-conteiner .header__conteiner .header__heading {
