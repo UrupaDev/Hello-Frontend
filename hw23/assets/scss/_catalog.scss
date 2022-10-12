@@ -1,7 +1,7 @@
 .catalog {
 
   .catalog__conteiner {
-    max-width: 1340px;
+    max-width: 1343px;
     width: 100%;
     margin: auto;
 
@@ -21,15 +21,18 @@
     .catalog__wrapper {
       display: flex;
       align-items: center;
+      padding: 0 15px;
 
       .swiper-prev {
         padding-right: 23px;
         font-size: 67px;
+        cursor: url(../../src/img/cursor.svg), pointer;
       }
 
       .swiper-next {
         padding-left: 23px;
         font-size: 67px;
+        cursor: url(../../src/img/cursor.svg), pointer;
       }
 
       .catalog__list {
@@ -40,12 +43,14 @@
 
           .catalog__item {
             border: 1px solid #F8F1EA;
+            max-height: 445px;
+            height: 100%;
 
             img {
               padding-top: 20px;
             }
             
-            p {
+            .catalog__item-about {
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 600;
@@ -66,6 +71,42 @@
               color: #000000;
               padding-bottom: 20px;
               display: block;
+            }
+
+            .in-stock, .sold {
+              width: 60px;
+              height: 20px;
+
+              p {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 4px;
+              }
+            }
+
+            .in-stock {
+              background: #F16A50;
+
+              p {
+                color: #FFF;
+              }
+            }
+
+            .sold {
+              background: #F8F1EA;
+
+              p {
+                color: #000000;
+              }
+            }
+
+            &:hover {
+              border: 1px solid #F16A50;
             }
           }
         }
@@ -89,7 +130,25 @@
         text-transform: uppercase;
         color: #000000;
         background: none;
+
+        &:hover {
+          background: #F16A50;
+          color: #FFF;
+          border: none;
+          cursor: url(../../src/img/cursor.svg), pointer;
+        }
       }
     }
   }
+}
+
+@media (max-width: 576px) {
+
+  .catalog .catalog__conteiner .catalog__wrapper {
+
+    .swiper-next, .swiper-prev {
+      display: none;
+    }
+  }
+  
 }

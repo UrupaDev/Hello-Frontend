@@ -33,17 +33,22 @@
               <li class="header__menu-item"> <a href="#contacts">Contacts</a> </li>
             </ul>
           </div>
+          <div class="header__burger-menu">
+            <div class="burger-menu__conteiner">
+              <span></span>
+            </div>
+          </div>
           <div class="header__tools">
-            <a href="/#">
+            <div>
               <svg class="search-icon" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M36 34.117L25.944 24.061a14.671 14.671 0 10-1.883 1.883L34.117 36 36 34.117zM2.71 14.695a11.984 11.984 0 1111.985 11.984A11.998 11.998 0 012.71 14.695z" fill="#000"/>
               </svg>
-            </a>
-            <a href="/#">
+            </div>
+            <div>
               <svg class="profile-icon" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 1C9.059 1 1 9.059 1 19s8.059 18 18 18 18-8.059 18-18S28.941 1 19 1z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 30s4.037-5.071 14-5.071c9.96 0 14 5.071 14 5.071H5zm14-11.308a5.48 5.48 0 003.841-1.566 5.303 5.303 0 001.592-3.78 5.303 5.303 0 00-1.592-3.78A5.48 5.48 0 0019 8a5.48 5.48 0 00-3.842 1.566 5.302 5.302 0 00-1.592 3.78c0 1.418.573 2.777 1.592 3.78A5.48 5.48 0 0019 18.692v0z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -67,28 +72,43 @@
             <div class="catalog__list swiper">
               <div class="catalog__items swiper-wrapper">
                 <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
                   <img src="src/img/guitar1.png" alt="guitar">
-                  <p>Hagstrom Alvar Limited Edition</p><br>
+                  <p class="catalog__item-about">Hagstrom Alvar Limited Edition</p><br>
                   <span>€2.990,00</span>
                 </div>
                 <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
                   <img src="src/img/guitar2.png" alt="guitar">
-                  <p>Hagstrom Tremar Viking Deluxe Cloudy Seas</p><br>
+                  <p class="catalog__item-about">Hagstrom Tremar Viking Deluxe Cloudy Seas</p><br>
                   <span>€1.300,00</span>
                 </div>
                 <div class="catalog__item swiper-slide">
+                  <div class="sold">
+                    <p>sold</p>
+                  </div>
                   <img src="src/img/guitar3.png" alt="guitar">
-                  <p>Gibson Les Paul Standard 60s</p><br>
+                  <p class="catalog__item-about">Gibson Les Paul Standard 60s</p><br>
                   <span>€3.749,00</span>
                 </div>
                 <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
                   <img src="src/img/guitar4.png" alt="guitar">
-                  <p>Suhr Standard Plus Trans Blue Denim</p><br>
+                  <p class="catalog__item-about">Suhr Standard Plus Trans Blue Denim</p><br>
                   <span>€3.449,00</span>
                 </div>
                 <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
                   <img src="src/img/guitar5.png" alt="guitar">
-                  <p>Fender Telecaster Black Paisley Limited Edition</p><br>
+                  <p class="catalog__item-about">Fender Telecaster Black Paisley Limited Edition</p><br>
                   <span>€1.499,00</span>
                 </div>
               </div>
@@ -106,7 +126,7 @@
           <div class="partners__items owl-carousel owl-theme owl-loaded">
             <div class="customPrevBtn icon-prev"></div>
             <div class="owl-stage-outer">
-              <div class="owl-stage">
+              <div class="owl-stage owl-theme">
                 <div class="partners__item owl-item">
                   <img src="src/img/partner1.svg" alt="company_name">
                 </div>
@@ -146,22 +166,42 @@
         <div class="footer__conteiner">
           <div class="footer__main-items">
             <div class="footer__left">
-              <img src="src/img/logo_white.svg" alt="logo">
+              <a href="#home">
+                <img src="src/img/logo_white.svg" alt="logo">
+              </a>
               <ul class="footer__left-items">
-                <li>Home</li>
-                <li>Catalog</li>
-                <li>Partners</li>
-                <li>Contacts</li>
+                <a href="#home">
+                  <li>Home</li>
+                </a>
+                <a href="#catalog">
+                  <li>Catalog</li>
+                </a>
+                <a href="#partners">
+                  <li>Partners</li>
+                </a>
+                <a href="#contacts">
+                  <li>Contacts</li>
+                </a>
               </ul>
             </div>
             <div class="footer__right">
               <h3>Contact Us</h3>
               <div  class="footer__right-items">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.pinterest.pt/" target="_blank">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
               </div>
               <p>0800 300 4040</p>
             </div>

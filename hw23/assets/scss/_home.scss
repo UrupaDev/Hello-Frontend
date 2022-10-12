@@ -78,6 +78,12 @@
       background: none;
       margin-top: 50px;
       color: #fff;
+
+      &:hover {
+        background: #F16A50;
+        cursor: url(../../src/img/cursor.svg), pointer;
+        border: none;
+      }
     }
   }
 }
