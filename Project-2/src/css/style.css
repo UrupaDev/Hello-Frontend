@@ -178,6 +178,7 @@ html {
 
 .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .header .header__main-conteiner .header__conteiner .header__nav .header__nav-items .header__menu .header__menu-items .header__menu-item .header__menu-label {
@@ -254,6 +255,7 @@ html {
 
 .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items {
   padding-top: 45px;
+  align-items: center;
 }
 
 .header .header__main-conteiner .header__conteiner .sticky_header .header__nav-items .header__logo {

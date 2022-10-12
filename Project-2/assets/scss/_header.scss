@@ -101,6 +101,7 @@
   
               .header__menu-item {
                 display: flex;
+                flex-direction: row-reverse;
   
                 .header__menu-label {
                   font-family: 'Source Sans Pro';
@@ -180,6 +181,7 @@
   
         .header__nav-items {
           padding-top: 45px;
+          align-items: center;
 
           .header__logo {
             display: flex;
