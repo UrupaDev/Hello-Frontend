@@ -179,10 +179,11 @@
         z-index: 2;
   
         .header__nav-items {
-          max-width: 1170px;
-          width: 100%;
-          margin: auto;
           padding-top: 45px;
+
+          .header__logo {
+            display: flex;
+          }
         }
       }
   
@@ -509,5 +510,33 @@
     padding-left: 9px;
     margin-top: 56px;
     align-items: flex-start;
+  }
+
+  .header .header__main-conteiner .header__conteiner {
+
+    .header__heading {
+      padding-top: 180px;
+
+      h1 {
+        font-size: 46px;
+        line-height: 98px;
+      }
+  
+      p {
+        padding: 0 15px;
+      }
+    }
+
+    .heading_when_scroll {
+      padding-top: 272px;
+    }
+
+    .header__nav .header__nav-items .header__logo a img{
+      width: 170px;
+    }
+
+    .buger-menu {
+      top: 68px;
+    }
   }
 }

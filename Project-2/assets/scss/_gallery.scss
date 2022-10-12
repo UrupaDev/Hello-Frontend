@@ -118,15 +118,22 @@
 
 @media (max-width: 455px) {
 
-  .gallery .gallery__items {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-      "img5";
-    padding: 0 15px;
+  .gallery {
+
+    .gallery__title h2 {
+      font-size: 40px;
+    }
+
+    .gallery__items {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+      padding: 0 15px;
+    }
   }
 }

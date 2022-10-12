@@ -209,8 +209,16 @@ input:-webkit-autofill:active{
 
 @media (max-width: 455px) {
 
-  .contacts .contacts__conteiner .contacts__tab .contacts__tab-content .contacts__tab-form form .contacts__form-button {
-    display: flex;
-    justify-content: center;
+  .contacts .contacts__conteiner .contacts__tab {
+    padding: 0 45px 0 35px;
+
+    .contacts__tab-title h2 {
+      font-size: 34px;
+    }
+
+    .contacts__tab-content .contacts__tab-form form .contacts__form-button {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
