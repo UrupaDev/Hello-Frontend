@@ -710,14 +710,12 @@ html {
 }
 
 .contacts .contacts__conteiner {
-  max-width: 1600px;
   width: 100%;
   margin: auto;
   position: relative;
 }
 
 .contacts .contacts__conteiner .contacts__map {
-  max-width: 1600px;
   width: 100%;
   height: 700px;
 }
