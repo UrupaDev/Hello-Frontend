@@ -685,43 +685,16 @@
   display: none;
 }
 
-.products__video .video-play {
+.products__video .video-play img {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: rgba(88, 98, 145, 0.3);
   z-index: 1;
   cursor: pointer;
   transition: 0.2s ease;
-}
-
-.products__video .video-play::before {
-  content: "\e904";
-  color: #262A3F;
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 50px;
-  width: 0;
-  height: 0;
-  border: 29px solid transparent;
-  border-top-width: 21px;
-  border-bottom-width: 21px;
-  border-left-color: #262A3F;
-  border-right-width: 0;
-  transition: transform 0.2s ease;
-}
-
-.products__video .video-play::before:hover::before {
-  transform: scale(1.2);
 }
 
 .video-is-playing .video-over {
@@ -1449,12 +1422,12 @@
     padding-top: 50px;
   }
 
-  .products__conteiner .products__video .video-play {
+  .products__conteiner .products__video .video-play img {
     width: 60px;
     height: 60px;
   }
 
-  .products__conteiner .products__video .video-play::before {
+  .products__conteiner .products__video .video-play img::before {
     left: 25px;
     border-top-width: 10px;
     border-bottom-width: 10px;
