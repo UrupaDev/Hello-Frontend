@@ -1,0 +1,200 @@
+.news {
+
+  .news__bg {
+    background: url(../../src/img/bg_news.webp);
+    background-size: cover;
+
+    .news__conteiner {
+      max-width: 1400px;
+      width: 100%;
+      margin: auto;
+      position: relative;
+
+      .news__title {
+        text-align: center;
+
+        svg {
+          margin: 120px 0 30px 0;
+        }
+
+        h2 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 44px;
+          line-height: 54px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+
+      .news__wrapper-main {
+        text-align: center;
+
+        .news__wrapper {
+          max-width: 1170px;
+          width: 100%;
+          margin: auto;
+  
+          .news__items {
+            padding: 90px 15px 170px 15px;
+  
+            .news__item {
+    
+              .news_content {
+                background: #FFFFFF;
+                padding: 30px 20px;
+                width: 370px;
+                margin: auto;
+    
+                h3 {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 27px;
+                  color: #2C4058;
+                }
+    
+                .content-text {
+                  font-family: 'Open Sans';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 25px;
+                  color: #2C4058;
+                  padding: 15px 0 46px 0;
+                }
+    
+                .news__author {
+                  display: flex;
+    
+                  img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                  }
+    
+                  .author_name_date {
+                    padding-left: 20px;
+    
+                    .author_name {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 18px;
+                      line-height: 22px;
+                      color: #2C4058;
+                    }
+    
+                    .author_date {
+                      font-family: 'Montserrat';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 17px;
+                      color: #55B7FF;
+                      padding-top: 6px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .news .news__bg .news__conteiner .news__wrapper-main .news__wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    left: 30px;
+   }
+}
+
+@media (max-width: 970px) {
+
+  .news .news__bg .news__conteiner .news__wrapper-main .news__wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .news .news__bg .news__conteiner .news__title svg {
+    margin: 70px 0 50px 0;
+  }
+
+  .news .news__bg .news__conteiner .news__wrapper-main .news__wrapper .news__items {
+    padding-top: 50px;
+  }
+
+  .swiper-prev, .swiper-next {
+    top: 45%;
+  }
+}
+
+@media (max-width: 455px) {
+  
+  .news .news__bg .news__conteiner {
+
+    .news__wrapper-main .news__wrapper {
+      max-width: 250px;
+      width: 100%;
+      margin: auto;
+  
+      .news__items .news__item {
+  
+        .news__img img {
+          width: 220px;
+        }
+    
+        .news_content {
+          width: 220px;
+        }
+      }
+  
+      .news__items .news__item .news_content {
+        padding: 15px;
+  
+        h3 {
+          font-size: 15px;
+        }
+  
+        .content-text {
+          font-size: 14px;
+          padding: 15px 0 25px 0;
+        }
+  
+        .news__author .author_name_date .author_name {
+          font-size: 14px;
+        }
+  
+        .author_date {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .news__title h2 {
+      font-size: 40px;
+    }
+  }
+  
+  .swiper-next, .swiper-prev {
+    border: none;
+    
+    svg {
+      width: 7px;
+    }
+  }
+}

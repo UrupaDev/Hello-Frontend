@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="libraries/animate.min.css">
+    <link rel="stylesheet" href="libraries/slicarousel.css">
+    <link rel="stylesheet" href="libraries/fancybox.min.css">
+    <link rel="stylesheet" href="libraries/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libraries/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="libraries/jquery-3.6.1.min.js"></script>
+    <script src="libraries/slicarousel.js"></script>
+    <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
+    <script src="libraries/fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Monticello</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="home__bg container">
+        <div class="the_slider"></div>
+      </div>
+        <div class="header__main-conteiner">
+          <div class="header__conteiner">
+            <div class="header__nav" id="header__nav">
+              <div class="header__nav-items">
+                <div class="header__logo" id="header__logo">
+                  <a href="#home"><img src="src/img/Logo.svg" alt="logo"></a> 
+                </div>
+                <div class="header__menu" id="header__menu">
+                  <div class="header__menu-items">
+                    <div class="header__menu-item">
+                      <label class="header__menu-label" for="menu-item1">  ABOUT US</label>
+                      <input type="radio" name="menu-item" id="menu-item1" onclick="window.location.href='#about'" checked>
+                    </div>
+                    <div class="header__menu-item">
+                      <label class="header__menu-label" for="menu-item2"> NEWS</label>
+                      <input type="radio" name="menu-item" id="menu-item2" onclick="window.location.href='#news'">
+                    </div>
+                    <div class="header__menu-item">
+                      <label class="header__menu-label" for="menu-item3">GALLERY</label>
+                      <input type="radio" name="menu-item" id="menu-item3" onclick="window.location.href='#gallery'">
+                    </div>
+                    <div class="header__menu-item">
+                      <label class="header__menu-label" for="menu-item4">CONTACT</label>
+                      <input type="radio" name="menu-item" id="menu-item4" onclick="window.location.href='#contacts'">
+                    </div>
+                  </div>
+                  <div class="buger-menu">
+                    <div class="buger-menu-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="social">
+                  <a href="https://www.facebook.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__heading" id="header__heading">
+              <h1>SIMPLE & MODERN</h1>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="header__scroll">
+              <button class="header__scroll-circle" onclick="window.location.href='#about'" style="transition: 0.8s ease-in-out">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
+                </svg>                
+              </button>
+            </div>
+          </div>
+        </div>
+      
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about__conteiner">
+          <div class="about__title">
+            <svg height="2" width="100" class="line">
+              <line x1="0" y1="0" x2="100" y2="0" style="stroke:#2C4058;stroke-width:1" />
+            </svg>
+            <h2>WHAT WE DO</h2>
+          </div>
+          <div class="about__items">
+            <div class="about__item about__item1">
+              <div class="item-img1 news-grid1">
+                <div></div>
+                <img class="wow animate__backInLeft" src="src/img/about_img1.webp" alt="building">
+              </div>
+              <div class="item-content news-grid2">
+                <p class="content-subtitle">ONE WORLD</p>
+                <h3>TRADE CENTER</h3>
+                <p class="content-text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. 
+                  The truth is, our thoughts are very powerful.</p>
+                <button>MORE DETAILS</button>
+                <a href="/#">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>New York City, United States - 1776 feet
+                </a>
+              </div>
+            </div>
+            <div class="about__item about__item2">
+              <div class="item-content news-grid3">
+                <p class="content-subtitle">INTERNATIONAL</p>
+                <h3>COMMERCE CENTRE</h3>
+                <p class="content-text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition 
+                  and how a digital advertising network may help.</p>
+                <button>MORE DETAILS</button>
+                <a href="/#">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>Hong Kong - 1588 feet
+                </a>
+              </div>
+              <div class="item-img2 news-grid4">
+                <div></div>
+                <img class="wow animate__backInRight" src="src/img/about_img2.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news" id="news">
+        <div class="news__bg">
+          <div class="news__conteiner">
+            <div class="news__title">
+              <svg height="2" width="100" class="line">
+                <line x1="0" y1="0" x2="100" y2="0" style="stroke:#FFF;stroke-width:1" />
+              </svg>
+              <h2>LATEST NEWS</h2>
+            </div>
+            <div class="news__wrapper-main">
+              <div class="swiper-prev">
+                <svg width="6" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.898 1.25a.254.254 0 00-.078-.18L4.43.68a.27.27 0 00-.18-.078.27.27 0 00-.18.078L.43 4.32a.27.27 0 00-.078.18.27.27 0 00.078.18l3.64 3.64a.27.27 0 00.18.078.27.27 0 00.18-.078l.39-.39a.27.27 0 00.078-.18.27.27 0 00-.078-.18L1.75 4.5l3.07-3.07a.27.27 0 00.078-.18z" fill="#fff"/>
+                </svg>
+              </div>
+              <div class="news__wrapper swiper">
+                <div class="news__items swiper-wrapper">
+                  <div class="news__item swiper-slide wow animate__pulse">
+                    <div class="news__img">
+                      <img src="src/img/news_img1.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                      <p class="content-text">Free directories: directories are perfect for customers that are searching for...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo1.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">ALJA BRUN</p>
+                          <p class="author_date">20 Jan 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__item swiper-slide wow animate__pulse">
+                    <div class="news__img">
+                      <img src="src/img/news_img2.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                      <p class="content-text">Having a home based business is a wonderful asset to your life...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo2.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">DOMINIC FREEMAN</p>
+                          <p class="author_date">13 Dec 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__item swiper-slide wow animate__pulse">
+                    <div class="news__img">
+                      <img src="src/img/news_img3.webp" alt="building">
+                    </div>
+                    <div class="news_content">
+                      <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                      <p class="content-text">There are many things that are important to catalog design...</p>
+                      <div class="news__author">
+                        <img src="src/img/user_photo3.webp" alt="photo">
+                        <div class="author_name_date">
+                          <p class="author_name">ALICE WARD</p>
+                          <p class="author_date">30 Nov 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-next">
+                <svg width="6" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.648 4.5a.27.27 0 00-.078-.18L.93.68A.27.27 0 00.75.602.27.27 0 00.57.68l-.39.39a.27.27 0 00-.078.18.27.27 0 00.078.18L3.25 4.5.18 7.57a.27.27 0 00-.078.18c0 .07.03.133.078.18l.39.39a.27.27 0 00.18.078.27.27 0 00.18-.078l3.64-3.64a.27.27 0 00.078-.18z" fill="#fff"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="gallery__title">
+          <svg height="2" width="100" class="line">
+            <line x1="0" y1="0" x2="100" y2="0" style="stroke:#2C4058;stroke-width:1" />
+          </svg>
+          <h2>GALLERY</h2>
+        </div>
+        <div class="gallery__items">
+          <img class="gallery__item gallery__item1" src="src/img/gallery_img1.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item2" src="src/img/gallery_img2.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item3" src="src/img/gallery_img3.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item4" src="src/img/gallery_img4.webp" alt="building" data-fancybox="gallery">
+          <img class="gallery__item gallery__item5" src="src/img/gallery_img5.webp" alt="building" data-fancybox="gallery">
+        </div>
+        <div class="gallery__button">
+          <button>SEE MORE</button>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__conteiner">
+          <div class="contacts__map" id="map"></div>  <!-- google map -->
+          <div class="contacts__tab"> 
+            <div class="contacts__tab-title">
+              <svg height="2" width="100" class="line">
+                <line x1="0" y1="0" x2="100" y2="0" style="stroke:#2C4058;stroke-width:1" />
+              </svg>
+              <h2>GET IN TOUCH</h2>
+            </div>
+            <div class="contacts__tab-content">
+              <div class="contacts__tab-text">
+                <div class="contacts__tab-item" href="/#">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  <p>91 Nolan Extensions Suite 670</p>  
+                </div>
+                <div class="contacts__tab-item">
+                  <i class="fa-sharp fa-solid fa-phone"></i>
+                <div class="type-contacts">
+                  <a href="tel:+001 356-868-2454" class="link-cont">+001 356-868-2454</a>
+                </div> 
+                </div>
+                <div class="contacts__tab-item"> 
+                  <i class="fa-solid fa-inbox"></i>
+                  <div class="type-contacts"></div>
+                  <a href="mailto:montichello@service.com" class="link-cont">montichello@service.com</a>
+                </div>
+                <div class="contacts__tab-item">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>From 07:05AM to 19:30PM</p> 
+                </div>
+              </div>
+              <div class="contacts__tab-form">
+                <form action="/#" method="get" name="contactForm">
+                  <div class="form-item">
+                    <input class="input-style" type="text" id="name" name="name" placeholder="Name">
+                    <div class="input-line"></div>
+                    <div class="error"></div>
+                  </div>
+                  <div class="form-item">
+                    <input class="input-style contacts__tab-email" type="email" id="email" name="email" placeholder="Email">
+                    <div class="input-line"></div>
+                    <div class="error"></div>
+                  </div>
+                  <div class="contacts__form-button">
+                    <button type="submit" id="submit">
+                     <p>SUBMIT</p> </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__conteiner">
+          <div class="footer__main">
+            <a href="#home">
+              <img src="src/img/Logo.svg" alt="logo">
+            </a>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" class="social-item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="social-item">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="social-item">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>Copyrights © 2020 Montichello</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdLJFhb9Kid_AtRLClhj_Ob6ZUAM4_uzc&callback=initMap&v=weekly"
+      defer></script>
+    <script src="libraries/wow.min.js"></script>
+    <script src="src/js/index.min.js"></script>
+  </body>
