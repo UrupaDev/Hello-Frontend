@@ -1,0 +1,148 @@
+* {
+  list-style-type: none;
+}
+
+.conteiner {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.conteiner form {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#listFilms {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #002e00;
+  margin: 19px;
+  background: #fcfffc;
+}
+
+#search {
+  width: 200px;
+  height: 38px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#type {
+  font-size: 20px;
+  color: gray;
+}
+
+#submit {
+  background: #e4fce2;
+  width: 120px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#detailsBtn {
+  width: 130px;
+  height: 30px;
+  margin: 30px 0;
+  background: #e4fce2;
+  border: 1px solid gray;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#detailsBtn:hover {
+  background: #3c8036;
+  color: #fff;
+}
+
+.poster {
+  width: 200px;
+  height: 290px;
+  margin: 40px;
+}
+
+.title {
+  display: block;
+  padding: 0 30px;
+  width: 170px;
+  height: 30px;
+  text-align: center;
+  font-size: large;
+}
+
+img {
+  width: 50%;
+}
+
+#details__items .title {
+  color: rgb(2, 163, 88);
+  font-weight: 700;
+}
+
+.details-poster {
+  width: 45%;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 50px 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.details-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-content p {
+  margin: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
