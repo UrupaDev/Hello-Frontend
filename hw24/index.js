@@ -21,6 +21,7 @@ body.insertAdjacentHTML(
     <div id="pagination"></div>
   </div>`);
 
+  // first page AJAX request
   function apiRequest (options) {
     $.ajax(url, {
       type: "GET",
@@ -41,7 +42,7 @@ body.insertAdjacentHTML(
     });
   }
 
-  // go to search by click
+// go to search by click
 $("#submit").on("click", function(event){
   event.preventDefault();
 
@@ -146,7 +147,7 @@ function innerMovies (data) {
   $(".not-found").hide(); 
 };
 
-// if data hasn`t any result by request   !!!!!TODO click only one time needed
+// if data hasn`t any result by request
 function errorSearch (data) {
   let conteiner = document.querySelector(".conteiner");
   conteiner.insertAdjacentHTML(
