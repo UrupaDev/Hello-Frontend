@@ -1,0 +1,61 @@
+/* Exercise 1 */
+#before_edit, .after_edit {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+  color: #39396a;
+  font-weight: 700;
+}
+
+#editing {
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  color: #39396a;
+}
+
+/* Exercise 2 */
+table {
+  text-align:left;
+  margin: auto;
+  padding-top: 100px;
+}
+
+th,td {
+  padding:4px 8px;
+  font-size: 20px;
+}
+
+th {
+  cursor:pointer;
+  font-size: 30px;
+}
+
+/* Exercise 3 */
+p { 
+  background: #9c9cc0;
+  border: 2px solid #4a4a4a;
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+p.resizable { 
+  background: #7373b3; 
+  position: relative; 
+}
+
+p .resizer { 
+  width: 10px; 
+  height: 10px; 
+  background: rgb(251, 255, 41); 
+  position:absolute; 
+  right: 0; 
+  bottom: 0; 
+  cursor: se-resize; }
+
