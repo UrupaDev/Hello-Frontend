@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libraries/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libraries/slicarousel.css">
+    <link rel="stylesheet" href="libraries/ico_style.css">
+    <link rel="stylesheet" href="libraries/owl.carousel.min.css">
+    <link rel="stylesheet" href="libraries/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="libraries/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="libraries/slicarousel.js"></script>
+    <script src="https://kit.fontawesome.com/a67125816c.js" crossorigin="anonymous"></script>
+    <title>On Wave</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__conteiner">
+        <div class="header__items">
+          <div class="header__logo">
+            <a href="/#">
+              <img src="src/img/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="header__menu">
+            <ul class="header__menu-items">
+              <li class="header__menu-item"> <a href="#home">Home</a> </li>
+              <li class="header__menu-item"> <a href="#catalog">Catalog</a> </li>
+              <li class="header__menu-item"> <a href="#partners">Partners</a> </li>
+              <li class="header__menu-item"> <a href="#contacts">Contacts</a> </li>
+            </ul>
+          </div>
+          <div class="header__burger-menu">
+            <div class="burger-menu__conteiner">
+              <span></span>
+            </div>
+          </div>
+          <div class="header__tools">
+            <div>
+              <svg class="search-icon" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36 34.117L25.944 24.061a14.671 14.671 0 10-1.883 1.883L34.117 36 36 34.117zM2.71 14.695a11.984 11.984 0 1111.985 11.984A11.998 11.998 0 012.71 14.695z" fill="#000"/>
+              </svg>
+            </div>
+            <div>
+              <svg class="profile-icon" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 1C9.059 1 1 9.059 1 19s8.059 18 18 18 18-8.059 18-18S28.941 1 19 1z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 30s4.037-5.071 14-5.071c9.96 0 14 5.071 14 5.071H5zm14-11.308a5.48 5.48 0 003.841-1.566 5.303 5.303 0 001.592-3.78 5.303 5.303 0 00-1.592-3.78A5.48 5.48 0 0019 8a5.48 5.48 0 00-3.842 1.566 5.302 5.302 0 00-1.592 3.78c0 1.418.573 2.777 1.592 3.78A5.48 5.48 0 0019 18.692v0z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="home__bg container">
+          <div class="the_slider"></div>
+        </div>
+          <div class="home__conteiner">
+            <h1>Find your own style</h1>
+            <button>View more</button>
+          </div>
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <div class="catalog__conteiner">
+          <h2>new arrivals</h2>
+          <div class="catalog__wrapper">
+            <div class="swiper-prev icon-prev"></div>
+            <div class="catalog__list swiper">
+              <div class="catalog__items swiper-wrapper">
+                <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
+                  <img src="src/img/guitar1.png" alt="guitar">
+                  <p class="catalog__item-about">Hagstrom Alvar Limited Edition</p><br>
+                  <span>€2.990,00</span>
+                </div>
+                <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
+                  <img src="src/img/guitar2.png" alt="guitar">
+                  <p class="catalog__item-about">Hagstrom Tremar Viking Deluxe Cloudy Seas</p><br>
+                  <span>€1.300,00</span>
+                </div>
+                <div class="catalog__item swiper-slide">
+                  <div class="sold">
+                    <p>sold</p>
+                  </div>
+                  <img src="src/img/guitar3.png" alt="guitar">
+                  <p class="catalog__item-about">Gibson Les Paul Standard 60s</p><br>
+                  <span>€3.749,00</span>
+                </div>
+                <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
+                  <img src="src/img/guitar4.png" alt="guitar">
+                  <p class="catalog__item-about">Suhr Standard Plus Trans Blue Denim</p><br>
+                  <span>€3.449,00</span>
+                </div>
+                <div class="catalog__item swiper-slide">
+                  <div class="in-stock">
+                    <p>in stock</p>
+                  </div>
+                  <img src="src/img/guitar5.png" alt="guitar">
+                  <p class="catalog__item-about">Fender Telecaster Black Paisley Limited Edition</p><br>
+                  <span>€1.499,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-next icon-next"></div>
+          </div>
+          <div class="catalog__button">
+            <button>View more</button>
+          </div>
+        </div>
+      </section>
+      <section class="partners" id="partners">
+        <div class="partners__conteiner">
+          <h2>our partners</h2>
+          <div class="partners__items owl-carousel owl-theme owl-loaded">
+            <div class="customPrevBtn icon-prev"></div>
+            <div class="owl-stage-outer">
+              <div class="owl-stage owl-theme">
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner1.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner2.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner3.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner4.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner5.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner6.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner7.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner8.svg" alt="company_name">
+                </div>
+                <div class="partners__item owl-item">
+                  <img src="src/img/partner9.svg" alt="company_name">
+                </div>
+              </div>
+            </div>
+            <div class="customNextBtn icon-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__conteiner">
+          <div class="footer__main-items">
+            <div class="footer__left">
+              <a href="#home">
+                <img src="src/img/logo_white.svg" alt="logo">
+              </a>
+              <ul class="footer__left-items">
+                <a href="#home">
+                  <li>Home</li>
+                </a>
+                <a href="#catalog">
+                  <li>Catalog</li>
+                </a>
+                <a href="#partners">
+                  <li>Partners</li>
+                </a>
+                <a href="#contacts">
+                  <li>Contacts</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__right">
+              <h3>Contact Us</h3>
+              <div  class="footer__right-items">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.pinterest.pt/" target="_blank">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <p>0800 300 4040</p>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>© Copyright 2022. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="libraries/owl.carousel.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
