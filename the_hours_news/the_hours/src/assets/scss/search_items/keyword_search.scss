@@ -1,0 +1,56 @@
+.search-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 120px 0 150px 0;
+  padding: 0 15px;
+
+  input {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .search {
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(23,42,71,0.5);
+  }
+
+  i {
+    font-size: 20px;
+    color: #2f0cdd;
+  }
+
+  .button {
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    background: none;
+    font-family: "Poppins Light";
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 20px;
+    background: #2f0cdd;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #ff7b00;
+    }
+  }
+
+  .category-list, .country-list {
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(23,42,71,0.5);
+    background: none;
+    font-family: "Poppins Light";
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 18px;
+  }
+}

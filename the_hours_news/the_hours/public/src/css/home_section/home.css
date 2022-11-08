@@ -1,0 +1,119 @@
+.home {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.home .home__title {
+  padding: 80px 0 0 135px;
+  display: flex;
+}
+
+.home .home__title h1 {
+  font-family: "Arial Black";
+  font-weight: 700;
+  font-size: 160px;
+  color: rgb(14, 28, 64);
+  letter-spacing: -10px;
+  border-right: 1px solid rgb(14, 28, 64);
+  padding-right: 30px;
+}
+
+.home .home__title svg {
+  margin-left: 15px;
+  padding-top: 57px;
+}
+
+.home .home__title p {
+  font-family: "Arial Black";
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(14, 28, 64);
+  display: block;
+  max-width: 150px;
+  padding: 57px 0 0 25px;
+}
+
+.home .home__video,
+.home .about__image {
+  max-width: 1380px;
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.home .home__video video,
+.home .home__video img,
+.home .about__image video,
+.home .about__image img {
+  width: 100%;
+}
+
+.home .home__back-home {
+  transform: rotate(-90deg);
+  top: 320px;
+  font-family: "Arial Black";
+  font-weight: 700;
+  font-size: 20px;
+  color: #2f0cdd;
+  background: #fff;
+  cursor: pointer;
+  left: 0;
+  position: fixed;
+  padding: 13px;
+}
+
+.home .home__slider {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.home .home__slider .home__slider-wrapper {
+  height: 60px;
+  width: 100%;
+  background: #2f0cdd;
+  bottom: -23px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.home .home__slider .home__slider-wrapper .home__slider-lable {
+  font-family: "Arial Black";
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  max-width: 100px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .home .home__title {
+    padding: 80px 0 0 15px;
+  }
+
+  .home .home__slider {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home .home__title {
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .home .home__title h1 {
+    font-size: 70px;
+    letter-spacing: -4px;
+  }
+
+  .home .home__title p {
+    padding: 0 0 0 25px;
+  }
+}

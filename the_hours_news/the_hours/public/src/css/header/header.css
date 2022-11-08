@@ -1,0 +1,44 @@
+header {
+  background: #2f0cdd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header .header__conteiner {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+header .header__conteiner .header__items {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr 0.2fr;
+  align-items: center;
+  height: 70px;
+}
+
+header .header__conteiner .header__items .header__nav {
+  max-width: 500px;
+  width: 100%;
+  padding-left: 100px;
+}
+
+header .header__conteiner .header__items .header__nav .header__nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header__conteiner .header__items .header__search {
+  padding: 0 15px;
+}
+
+header .header__conteiner .header__items .header__search i {
+  color: #fff;
+  font-size: 20px;
+}
+
+header .header__conteiner .header__items .header__search i:hover {
+  color: #ff7b00;
+}

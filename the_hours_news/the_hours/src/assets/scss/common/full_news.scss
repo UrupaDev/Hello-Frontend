@@ -1,0 +1,139 @@
+.full__bg {
+  background: rgb(250, 249, 249);
+  padding-bottom: 30px;
+
+  .full__conteiner {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 15px 0 15px;
+    position: relative;
+  
+    h2 {
+      font-family: "Arial Black";
+      font-weight: 700;
+      color: #2f0cdd;
+      font-size: 25px;
+      padding-top: 20px;
+    }
+
+    .sources-name {
+      padding-top: 15px;
+      font-size: 25px;
+      font-family: "Arial Black";
+      font-weight: 700;
+      color: #354763;
+    }
+  
+    .full__news {
+  
+      .full__items {
+    
+        .full__news-item {
+          display: flex;
+          margin-bottom: 70px;
+          gap: 50px;
+          position: relative;
+          border-bottom: 2px solid #dedcdc;
+    
+          img {
+            max-width: 400px;
+            min-width: 400px;
+            width: 100%;
+            height: 257px;
+          }
+    
+          .full__news-content {
+            position: relative;
+            max-width: 800px;
+            margin-bottom: 20px;
+    
+            .content-title {
+              padding: 0;
+              color: black;
+            }
+    
+            .content-description {
+              font-family: "Tanseek Modern";
+              font-weight: 400;
+              font-size: 24px;
+              padding-bottom: 20px;
+              line-height: 16px;
+              color: #283d5b;
+            }
+    
+            .content-content {
+              font-family: "Tanseek Modern";
+              font-weight: 400;
+              font-size: 28px;
+              padding-bottom: 30px;
+              line-height: 22px;
+              max-width: 800px;
+            }
+  
+            .content-source {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              border-top: dashed;
+              max-width: 160px;
+              width: 100%;
+              font-size: 16px;
+
+              &:hover {
+                background: #ff7b00;
+                color: #fff;
+              }
+            }
+
+            .content-data {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              font-family: "Tanseek Modern";
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 16px;
+              color: #000;
+            }
+
+            .content-link{
+              display: flex;
+              line-height: 20px;
+              font-family: "Tanseek Modern";
+              font-weight: 400;
+              font-size: 24px;
+              padding-bottom: 30px;
+              width: 100%;
+
+              p {
+                display: inline;
+              }
+
+              a {
+                color: #324cb6;
+                padding-left: 5px;
+                max-width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+                max-width: 200px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .full__bg .full__conteiner .full__news .full__items .full__news-item img {
+    max-width: 316px;
+    min-width: 316px;
+    width: 100%;
+    height: 200px;
+  }
+}

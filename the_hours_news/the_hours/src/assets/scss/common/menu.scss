@@ -1,0 +1,32 @@
+.nav-item {
+  height: 70px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    font-family: "Arial Black";
+    font-weight: 700;
+    color: white;
+    font-size: 17px;
+  }
+
+  &:hover {
+    background: #faf9f9;
+  }
+
+  &:active {
+    background: #faf9f9;
+  }
+}
+
+.nav-item:hover a {
+  color: #2f0cdd;
+}
+
+.footer__nav-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+}

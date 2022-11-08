@@ -1,0 +1,93 @@
+.footer {
+  background: rgb(23, 42, 71);
+}
+
+.footer .footer__conteiner {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.footer .footer__conteiner .footer__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 15px;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__title {
+  font-family: "Arial Black";
+  font-weight: 700;
+  color: white;
+  font-size: 22px;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .form-email {
+  border-bottom: 1px solid #fff;
+  padding: 0 0 0 7px;
+  max-width: 370px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .form-email .form-field {
+  opacity: 1;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .form-email input {
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  opacity: 0.5;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .form-email .email-errors {
+  padding-top: 10px;
+  color: #fff;
+  position: absolute;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .email-submit {
+  width: 150px;
+  height: 40px;
+  background: #2f0cdd;
+  border: none;
+  color: #fff;
+  font-family: "Arial Black";
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer .footer__conteiner .footer__items .footer__left-part .footer__form .email-submit:hover {
+  background: #ff7b00;
+}
+
+.footer .footer__conteiner .footer__bottom {
+  padding-bottom: 50px;
+}
+
+.footer .footer__conteiner .footer__bottom p {
+  font-family: "Poppins Light";
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,117 @@
+.home {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+
+  .home__title {
+    padding: 80px 0 0 135px;
+    display: flex;
+
+    h1 {
+      font-family: "Arial Black";
+      font-weight: 700;
+      font-size: 160px;
+      color: rgba(14,28,64);
+      letter-spacing: -10px;
+      border-right: 1px solid rgba(14,28,64);
+      padding-right: 30px;
+    }
+
+    svg {
+      margin-left: 15px;
+      padding-top: 57px;
+    }
+    
+    p {
+      font-family: "Arial Black";
+      font-weight: 700;
+      font-size: 25px;
+      color: rgba(14,28,64);
+      display: block;
+      max-width: 150px;
+      padding: 57px 0 0 25px;
+    }
+  }
+  
+  .home__video, .about__image {
+    max-width: 1380px;
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+
+    video, img {
+      width: 100%;
+    }
+  }
+  
+  .home__back-home {
+    transform: rotate(-90deg);
+    top: 320px;
+    font-family: "Arial Black";
+    font-weight: 700;
+    font-size: 20px;
+    color: #2f0cdd;
+    background: #fff;
+    cursor: pointer;
+    left: 0;
+    position: fixed;
+    padding: 13px;
+  }
+  
+  .home__slider {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+
+    .home__slider-wrapper {
+      height: 60px;
+      width: 100%;
+      background: #2f0cdd;
+      bottom: -23px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+      .home__slider-lable {
+        font-family: "Arial Black";
+        font-weight: 700;
+        color: white;
+        font-size: 20px;
+        max-width: 100px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+
+    .home__title {
+      padding: 80px 0 0 15px;
+    }
+
+    .home__slider {
+      max-width: 800px;
+    }
+  }
+}
+  
+@media (max-width: 950px) {
+  .home .home__title {
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    h1 {
+      font-size: 70px;
+      letter-spacing: -4px;
+    }
+    p {
+      padding: 0 0 0 25px;
+    }
+  }
+}
