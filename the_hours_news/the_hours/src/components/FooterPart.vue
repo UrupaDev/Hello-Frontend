@@ -4,14 +4,14 @@
       <div class="footer__items">
         <div class="footer__left-part">
           <div class="footer__title">{{ title }}</div>
-            <form class="footer__form ">
+            <form class="footer__form" @click="onAddAction">
               <div class="form-email" :class="{ error: v$.form.email.$errors.length }">
                 <input class="form-field" placeholder="Email" type="email" v-model="v$.form.email.$model">
                 <div class="email-errors" v-for="(error, index) of v$.form.email.$errors" :key="index">
                   <div class="error-msg">{{ error.$message }}</div>
                 </div>
               </div>
-              <input class="email-submit" type="submit" value="Subscribe">
+              <input class="email-submit" type="submit" value="Subscribe" v-on:click="alert('sgfag')">
             </form>
             <div class="footer__social"><SocialNetworks /></div>
         </div>
@@ -45,7 +45,10 @@ export default {
       action: '/action_page.php',
       placeholder: 'Enter your email here*',
       bottom_text: '© 2022 by Tetiana Urupa',
-      button_lable: 'Subscribe'
+      button_lable: 'Subscribe',
+      form: {
+        email: ''
+      }
     }
   },
   validations() {

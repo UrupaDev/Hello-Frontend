@@ -7,9 +7,9 @@
     <div class="about__image">
       <img src="../../../public/src/img/about.webp" alt="man"/>
     </div>
-    <div class="home__slider">
-      <div class="home__slider-wrapper">
-        <p class="home__slider-lable">{{ sliderLable }}</p>
+    <div class="about__title">
+      <div class="about__wrapper">
+        <p class="about__lable">{{ sliderLable }}</p>
       </div>
     </div>
   </div>

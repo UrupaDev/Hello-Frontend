@@ -30,3 +30,13 @@
 .contacts__social a:hover {
   color: #ff7b00;
 }
+
+@media (max-width: 540px) {
+  .contacts__social {
+    padding-left: 10px;
+  }
+
+  .header__social a {
+    font-size: 18px;
+  }
+}

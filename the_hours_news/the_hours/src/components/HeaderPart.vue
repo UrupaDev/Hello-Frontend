@@ -2,6 +2,7 @@
   <div class="header">
     <div class="header__conteiner">
       <div class="header__items">
+        <BurgerMenu />
         <router-link to="/search" class="header__search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </router-link>
@@ -16,13 +17,15 @@
 
 <script>
 import MainMenu from './menu/MainMenu.vue';
+import BurgerMenu from './menu/BurgerMenu.vue';
 import SocialNetworks from './common/SocialNetworks.vue';
 
 export default {
   name: 'HeaderPart',
   components: {
     MainMenu,
-    SocialNetworks
+    SocialNetworks,
+    BurgerMenu
   },
   data () {
     return {

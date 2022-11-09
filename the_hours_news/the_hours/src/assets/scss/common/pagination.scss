@@ -40,3 +40,11 @@ ul#componentContainer {
   justify-content: center;
   margin: 30px 0;
 }
+
+@media (max-width: 540px) {
+  .paginate-buttons {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

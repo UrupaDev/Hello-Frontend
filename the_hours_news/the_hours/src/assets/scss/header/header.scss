@@ -43,6 +43,12 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  header .header__conteiner .header__items .header__search {
+    padding: 0;
+  }
+}
+
 
 
 

@@ -1,6 +1,6 @@
 <template>
   <form class="search-form">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
     <input type="text" v-model="query" class="search" :placeholder="[[ placeholder ]]">
     <select v-model="category" class="category-list">
       <option disabled value="">category</option>
@@ -53,7 +53,7 @@
         <div v-else class="not-found please-enter">
           <p>Please, enter something</p>
         </div>
-        <div v-if="articles.length < 1" class="not-found no-results">
+        <div v-if="articles.length < 0" class="not-found no-results">
           <p>No search results</p>
         </div>
       </div>
@@ -112,9 +112,6 @@ import axios from 'axios';
       this.articlesSearch();
     },
   },
-  mounted () {
-    this.articlesSearch()
-  }
 }
 </script>
 

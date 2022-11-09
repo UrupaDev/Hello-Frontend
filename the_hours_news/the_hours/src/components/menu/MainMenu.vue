@@ -23,7 +23,8 @@
           menuItem2: 'About',
           menuItem3: 'All News',
           menuItem4: 'Contacts'
-        }
+        },
+        navOpen: false
       }
     }
   }

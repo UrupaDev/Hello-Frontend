@@ -111,7 +111,86 @@
 
 @media (max-width: 850px) {
 
-  .contacts__conteiner .contacts__items h2 {
-    font-size: 28px;
+  .contacts__conteiner .contacts__items {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .contacts__content {
+
+      .contacts__form {
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+  
+        .form-email {
+          min-width: 400px;
+        }
+  
+        textarea {
+          min-width: 400px;
+        }
+      }
+
+      .content-items {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .contacts__conteiner .contacts__items {
+    padding: 0 15px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .contacts__content {
+      margin-bottom: 50px;
+
+      .content-items {
+        display: flex;
+        flex-direction: column;
+  
+        .content-item:nth-child(2) {
+          border-right: none;
+          border-left: none;
+          padding: 0;
+        }
+  
+        .content-item {
+          display: flex;
+  
+          .item-data {
+            line-height: 20px;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .contacts__form .submit {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .contacts__conteiner .contacts__items .contacts__content .contacts__form {
+    max-width: 250px;
+
+    .form-email {
+      min-width: 250px;
+    }
+
+    textarea {
+      min-width: 250px;
+    }
   }
 }
