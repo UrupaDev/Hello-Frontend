@@ -1,7 +1,7 @@
 <template>
   <form class="search-form">
     <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    <input type="text" v-model="query" class="search" :placeholder="[[ placeholder ]]">
+    <input type="text" v-model="query" class="search">
     <select v-model="category" class="category-list">
       <option disabled value="">category</option>
       <option value="">all</option>
@@ -27,7 +27,7 @@
       <vue-awesome-paginate v-if="(query || category) && articles.length > 1"
       :total-items="totalResults"
       :items-per-page="20"
-      :max-pages-shown="3"
+      :max-pages-shown="2"
       v-model="currentPage"
       :on-click="onClickHandler"
       />
@@ -110,6 +110,7 @@ import axios from 'axios';
       this.page = page;
       this.params.page = page;
       this.articlesSearch();
+      window.scrollTo(0, 0);
     },
   },
 }

@@ -5,7 +5,7 @@
       <p>{{ subtitle }}</p>
     </div>
     <div class="home__video">
-      <video src="../../public/src/video/people-walking.mp4"></video>
+      <video src="../../public/src/video/people-walking.mp4" loop autoplay></video>
     </div>
     <div class="home__slider">
       <div class="home__slider-wrapper">

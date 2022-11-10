@@ -28,8 +28,8 @@ import axios from 'axios'
     return {
       title: 'Sport',
       articles: [],
-      // apiUrl: 'https://newsapi.org/v2/top-headlines?',
-      // apiKey: 'apiKey=f02ffdb77a9448b6980cad1459855569',
+      apiUrl: 'https://newsapi.org/v2/top-headlines?',
+      apiKey: 'apiKey=f02ffdb77a9448b6980cad1459855569',
       language: 'language=en&',
       pageSize: 'pageSize=3&',
       category: 'category=sports&'
@@ -40,20 +40,8 @@ import axios from 'axios'
       axios.get(this.apiUrl + this.category + this.language + this.pageSize + this.apiKey)
       .then(response => {
         this.articles = response.data.articles;
-        console.log(response.data.articles)
       })
     },
-    // default image 
-    DefaultImage() {
-    let images = document.querySelectorAll('img');
-    images.forEach(img => {
-      img.addEventListener('error', function handleError() {
-        let defaultImage = 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/f9203f43012225.57e05eb56b036.png';
-        img.src = defaultImage;
-        img.alt = 'default';
-      });
-    })
-    }
   },
   mounted () {
     this.getData()

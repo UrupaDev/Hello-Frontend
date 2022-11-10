@@ -4,13 +4,14 @@
   margin: auto;
 
   .home__title {
-    padding: 80px 0 0 135px;
+    padding-top: 100px;
+    justify-content: center;
     display: flex;
 
     h1 {
       font-family: "Arial Black";
       font-weight: 700;
-      font-size: 160px;
+      font-size: 130px;
       color: rgba(14,28,64);
       letter-spacing: -10px;
       border-right: 1px solid rgba(14,28,64);
@@ -29,12 +30,12 @@
       color: rgba(14,28,64);
       display: block;
       max-width: 150px;
-      padding: 57px 0 0 25px;
+      padding: 0 0 0 25px;
     }
   }
   
   .home__video, .about__image {
-    max-width: 1380px;
+    max-width: 1080px;
     width: 100%;
     margin: auto;
     padding-top: 30px;
@@ -140,7 +141,7 @@
       padding-left: 0;
       background: #bab5b5;
       position: static;
-      margin-top: -3px;
+      margin-top: -4px;
   
       .home__slider-lable {
         display: none;

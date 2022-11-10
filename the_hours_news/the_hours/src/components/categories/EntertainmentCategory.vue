@@ -28,8 +28,8 @@ import axios from 'axios'
     return {
       title: 'Entertaiment',
       articles: [],
-      // apiUrl: 'https://newsapi.org/v2/top-headlines?',
-      // apiKey: 'apiKey=f02ffdb77a9448b6980cad1459855569',
+      apiUrl: 'https://newsapi.org/v2/top-headlines?',
+      apiKey: 'apiKey=f02ffdb77a9448b6980cad1459855569',
       language: 'language=en&',
       pageSize: 'pageSize=3&',
       category: 'category=entertainment&'
@@ -40,7 +40,6 @@ import axios from 'axios'
       axios.get(this.apiUrl + this.category + this.language + this.pageSize + this.apiKey)
       .then(response => {
         this.articles = response.data.articles;
-        console.log(response.data.articles)
       })
     },
   },

@@ -43,7 +43,6 @@ export default {
       axios.get(this.apiUrl + this.source + this.language + this.pageSize + this.apiKey)
       .then(response => {
         this.articles = response.data.articles;
-        console.log(response.data.articles)
       })
     },
   },

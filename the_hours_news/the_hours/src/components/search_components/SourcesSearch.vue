@@ -23,6 +23,13 @@
           </div>
         </div>
       </div>
+      <vue-awesome-paginate
+      :total-items="totalResults"
+      :items-per-page="20"
+      :max-pages-shown="3"
+      v-model="currentPage"
+      :on-click="onClickHandler"
+      />
     </div>
     <div class="not-found no-source" v-else>
       <p>Source not found. Please, try another one.</p>
@@ -59,12 +66,20 @@ import { useRoute } from 'vue-router';
       axios.get(this.apiUrl + this.source + this.language + this.pageSize, {params: this.params})
       .then(response => {
         this.articles = response.data.articles;
+        this.totalResults = response.data.totalResults;
+        this.page = response.data.page;
       })
     },
+    onClickHandler(page)  {
+      this.page = page;
+      this.params.page = page;
+      this.articlesSearch();
+      window.scrollTo(0, 0);
+    },
   },
-  mounted () {
-    this.getData()
-  }
+    mounted () {
+      this.getData()
+    }
 }
 </script>
 

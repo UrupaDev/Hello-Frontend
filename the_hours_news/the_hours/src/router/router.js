@@ -62,4 +62,11 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach(function (to, from, next) { 
+  setTimeout(() => {
+      window.scrollTo(0, 0);
+  }, 100);
+  next();
+});
+
 export default router;
