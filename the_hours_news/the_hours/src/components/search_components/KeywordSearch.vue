@@ -32,7 +32,7 @@
       :on-click="onClickHandler"
       />
       <div class="full__news">
-        <div v-if="query || category" class="full__items">
+        <div v-if="query || category || country" class="full__items">
           <div class="full__news-item" v-for="article in articles" :key="article.articles">
             <img v-bind:src="article.urlToImage || 'https://www.google.com/url?sa=i&url=https%3A%2F%2Felitebba.com%2Fhome%2Fdefault-image%2F&psig=AOvVaw07IWnEzbAn51SC4N44YTLE&ust=1667944236825000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKjphNCGnfsCFQAAAAAdAAAAABAE'" alt="news-image">
             <div class="full__news-content">
@@ -50,10 +50,10 @@
             </div>
           </div>
         </div>
-        <div v-else class="not-found please-enter">
+        <div v-else class="not-found please-enter" :class="{ invisible: !value1 }">
           <p>Please, enter something</p>
         </div>
-        <div v-if="articles.length < 0" class="not-found no-results">
+        <div v-if="articles.length < 1" class="not-found no-results" :class="{ invisible: !value2 }">
           <p>No search results</p>
         </div>
       </div>
@@ -87,6 +87,8 @@ import axios from 'axios';
       query: '',
       category: '',
       country: '',
+      value1: true,
+      value2: false,
       params: {
         apiKey: 'bb2ddab65a0947ab961c943ca927373c'
       },
@@ -101,6 +103,7 @@ import axios from 'axios';
             this.articles = response.data.articles;
             this.totalResults = response.data.totalResults;
             this.page = response.data.page;
+            this.value2 = true;
           })
           .catch(e => {
             this.error = e;
@@ -121,4 +124,8 @@ import axios from 'axios';
   @import '../../../public/src/css/common/pagination.min.css';
   @import '../../../public/src/css/common/full_news.min.css';
   @import '../../../public/src/css/search_items/keyword_search.min.css';
+
+  .invisible {
+    visibility: hidden;
+  }
 </style>
